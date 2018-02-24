@@ -101,7 +101,7 @@ class Graph:
     for line in lines:
       for v in line:
           if v != '\n' and v != ' ':
-            self.add_vertex_list(vertex, v)
+            self.add_vertex_list(vertex, int(v))
 
       vertex +=1
 
@@ -122,8 +122,8 @@ class Graph:
     eliminate_a = True # set to false if a has a connection if list of b based on Graph H
     eliminate_b = True
     done = True
-    a_lis = ""
-    b_lis = ""
+    a_lis = 0
+    b_lis = 0
     for a_lis in self.list_match_G_H[x]: # for all elem in the list(x) of possibe match 
       for b_lis in self.list_match_G_H[y]:
         if self.isThereArc(a_lis,b_lis,graph_h): # if a and b is an arc in h
@@ -198,10 +198,24 @@ class Graph:
 
           self.list_pairs[key].add(xy)
 
+  # for each key, get the hash, switch xy --> yx and duplicate the list
+  # has to revert the pairs inside of the list as well
   def copy_reverse(self):
-    return
+    all_keys = [[key,value] for key,value in self.list_pairs.items()]
 
-    #for key, value in self.list_pairs.items():
+    for x in range(len(all_keys)):
+      key = all_keys[x][0]
+      value = all_keys[x][1]
+      pair = get_x_y_hash(key, len(self.vertices))
+      if pair[0] != pair[1]: # if not pairs like xx or yy
+        new_key = create_hash(pair[1],pair[0],len(self.vertices) )
+        if new_key not in self.list_pairs:
+          self.list_pairs[new_key] = set() # cannot have repetitions
+        for elem in value:
+          xy = get_x_y_hash(elem, len(self.vertices)) # get the xy of that pair in value
+          # insert the reverse in the dictionary with reverse key
+          new_xy = create_hash(xy[1],xy[0],len(self.vertices) )
+          self.list_pairs[new_key].add(new_xy)
 
 
 
@@ -339,3 +353,6 @@ graph_g.print_pairs()
 
 graph_g.check_homomophism(graph_h)
 
+for key in graph_g.list_pairs:
+  pair = get_x_y_hash(key, len(graph_g.vertices))
+  print(key,pair[0],pair[1])
