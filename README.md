@@ -5,3 +5,10 @@ The present project aims to verify in detail each approach to distill the most e
 
 The ideal of the project is to design an algorithm using Linear Programming to achieve a solution in polynomial time for LORA( Level of repair analysis and minimum cost homomorphisms of graphs)
 
+## Contributors
+
+Dr. Arash Rafiey
+
+Dr. Jeff Kinne
+
+Thiago Santos
