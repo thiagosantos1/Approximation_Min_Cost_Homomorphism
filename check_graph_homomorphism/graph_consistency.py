@@ -4,6 +4,7 @@
 
 import random
 import sys
+from hash import * # use to create key for each pair in the list_pairs
 
 class Vertex:
   def __init__(self, n):
@@ -172,10 +173,10 @@ class Graph:
 
   # make pairs (a,a) for all values in the list of x
   def make_pairs_xx(self, x):
-    key = str(x)+str(x); # create a key for the dictionary
+    key = create_hash(int(x),int(x),len(self.vertices))
     for value in self.list_match_G_H[x]:
 
-      xy = str(value)+str(value); # create the pair
+      xy = create_hash(int(value),int(value),len(self.vertices))
 
       if key not in self.list_pairs: #create key and a set inside
         self.list_pairs[key] = set()
@@ -183,13 +184,15 @@ class Graph:
       self.list_pairs[key].add(xy)
 
   # make all possible pairs a,b | a e L(x) & b e L(y) & ab e A(H)
+  # each pair is also saved as hash of a pair
+  # thus, at dic[key][0] the result you have to apply get_hash to get x ,y
   def make_pairs_xy(self, x, y, graph_h, arc_need):
-    key = str(x)+str(y);
+    key = create_hash(int(x),int(y),len(self.vertices))
     for x_pair in self.list_match_G_H[x]:
       for y_pair in self.list_match_G_H[y]:
         if self.isThereArc(x_pair,y_pair,graph_h) or not arc_need: # just if ab e A(H) or there's no need of arc
 
-          xy = str(x_pair)+str(y_pair); # create the pair
+          xy = create_hash(int(x_pair),int(y_pair),len(self.vertices)) 
           if key not in self.list_pairs: #create key and a set inside
             self.list_pairs[key] = set()
 
@@ -197,11 +200,13 @@ class Graph:
 
   def copy_reverse(self):
     return
+
     #for key, value in self.list_pairs.items():
 
 
 
-
+  # each pair is also saved as hash of a pair
+  # thus, at dic[key][0] the result you have to apply get_hash to get x ,y
   def pair_consistency(self, graph_h):
     done = False
     stop = True
@@ -221,20 +226,18 @@ class Graph:
   def pair_reduction(self,x,y,z,graph_h):
     done = True
     eliminate_a_b = True # set to false if a has a connection if list of b based on Graph H
-    a_lis = ""
-    b_lis = ""
-    c_lis = ""
-    pair  = ""
+    a_lis = 0
+    b_lis = 0
+    c_lis = 0
+    pair  = 0
     # to check if key is in the dic - xy
-    pair_a_c = ""
-    pair_b_c = ""
-    x_p = min(x,z)
-    y_p = min(y,z)
+    pair_a_c = 0
+    pair_b_c = 0
 
 
-    key_a = str(x) + str(z)
-    key_b = str(y) + str(z)
-    key = str(x)+str(y)               #no such domain
+    key_a =  create_hash(int(x),int(z),len(self.vertices)) 
+    key_b = create_hash(int(y),int(z),len(self.vertices))  
+    key = create_hash(int(x),int(y),len(self.vertices))         #no such domain
     if key_a not in self.list_pairs or key_b not in self.list_pairs or key not in self.list_pairs:
       return True # done so far for this one
 
@@ -242,9 +245,9 @@ class Graph:
       for b_lis in self.list_match_G_H[y]:
         for c_lis in self.list_match_G_H[z]:
           
-          pair_a_c = str(a_lis) + str(c_lis)
-          pair_b_c = str(b_lis) + str(c_lis)
-          pair = str(a_lis) + str(b_lis)
+          pair_a_c = create_hash(int(a_lis),int(c_lis),len(self.vertices))
+          pair_b_c = create_hash(int(b_lis),int(c_lis),len(self.vertices)) 
+          pair = create_hash(int(a_lis),int(b_lis),len(self.vertices))
           if pair_a_c in self.list_pairs[key_a] and pair_b_c in self.list_pairs[key_b]:
             eliminate_a_b = False
             break
@@ -299,7 +302,6 @@ class Graph:
       print("Key(x,y) "+str(key) + " --> ",str(value))
 
     print()
-
 
 
 if len(sys.argv) < 4:
