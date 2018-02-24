@@ -63,12 +63,12 @@ class Graph:
       sys.exit(2)
 
     lines = graph_file.readlines()
-    for x in range(len(lines)):
+    for x in range(1,len(lines)+1):
       self.add_vertex(Vertex(x))
 
-    vertex = 0
+    vertex = 1
     for line in lines:
-      edge = 0
+      edge = 1
       for u in line:
           if u != '\n' and u != ' ':
             if int(u) ==1:
@@ -94,10 +94,10 @@ class Graph:
       print("There it not Homomorphism\n")
       sys.exit(2)
 
-    for x in range(len(lines)):
+    for x in range(1,len(lines)+1):
       self.list_match_G_H[x] = [] 
 
-    vertex = 0
+    vertex = 1
     for line in lines:
       for v in line:
           if v != '\n' and v != ' ':
@@ -110,7 +110,7 @@ class Graph:
     stop = True
     while not done:
       done = True
-      for x in range(len(self.vertices) ): # for all vertices x, do the domain reduction against all arcs with x
+      for x in range(1,len(self.vertices)+1 ): # for all vertices x, do the domain reduction against all arcs with x
         # for all neighbors of x that has't been checked
         arcs = (y for y,value in self.vertices[x].neighbors.items() )
         for y in arcs:
@@ -155,8 +155,8 @@ class Graph:
   
   def make_pairs(self,graph_h):
 
-    for x in range(len(self.vertices) ): # for all vertices x
-      self.make_pairs_xx(int(x)) # create all pairs aa | a e L(x)
+    for x in range(1,len(self.vertices) +1): # for all vertices x
+      self.make_pairs_xx(int(x),graph_h) # create all pairs aa | a e L(x)
       # for all neighbors of x that has't been checked
       arcs = [y for y,value in self.vertices[x].neighbors.items() ]
       non_arcs = [b for b,value in self.vertices.items() if b not in arcs and 
@@ -172,11 +172,11 @@ class Graph:
     self.copy_reverse()
 
   # make pairs (a,a) for all values in the list of x
-  def make_pairs_xx(self, x):
+  def make_pairs_xx(self, x,graph_h):
     key = create_hash(int(x),int(x),len(self.vertices))
     for value in self.list_match_G_H[x]:
 
-      xy = create_hash(int(value),int(value),len(self.vertices))
+      xy = create_hash(int(value),int(value),len(graph_h.vertices))
 
       if key not in self.list_pairs: #create key and a set inside
         self.list_pairs[key] = set()
@@ -191,11 +191,11 @@ class Graph:
     for x_pair in self.list_match_G_H[x]:
       for y_pair in self.list_match_G_H[y]:
         if self.isThereArc(x_pair,y_pair,graph_h) or not arc_need: # just if ab e A(H) or there's no need of arc
-
-          xy = create_hash(int(x_pair),int(y_pair),len(self.vertices)) 
+          # error is here
+          # when create a xy, we are considering the size of G. Should we change for H ?
+          xy = create_hash(int(x_pair),int(y_pair),len(graph_h.vertices)) 
           if key not in self.list_pairs: #create key and a set inside
             self.list_pairs[key] = set()
-
           self.list_pairs[key].add(xy)
 
   # for each key, get the hash, switch xy --> yx and duplicate the list
@@ -212,10 +212,13 @@ class Graph:
         if new_key not in self.list_pairs:
           self.list_pairs[new_key] = set() # cannot have repetitions
         for elem in value:
-          xy = get_x_y_hash(elem, len(self.vertices)) # get the xy of that pair in value
+          xy = get_x_y_hash(elem, len(graph_h.vertices)) # get the xy of that pair in value
           # insert the reverse in the dictionary with reverse key
-          new_xy = create_hash(xy[1],xy[0],len(self.vertices) )
+          new_xy = create_hash(xy[1],xy[0],len(graph_h.vertices) )
           self.list_pairs[new_key].add(new_xy)
+
+          if xy == -1:
+            print("Test ",xy,x_pair,y_pair,len(self.vertices))
 
 
 
@@ -226,12 +229,12 @@ class Graph:
     stop = True
     while not done:
       done = True
-      for x in range(len(self.vertices) ): # for all vertices x, do the domain reduction against all arcs with x
+      for x in range(1,len(self.vertices) +1 ): # for all vertices x, do the domain reduction against all arcs with x
         # for all neighbors of x that has't been checked
         pairs = (y for y,value in self.vertices.items() if y !=x ) 
         for y in pairs:
           # reduction from arc xy to a third variable z
-          for z in range(len(self.vertices)):
+          for z in range(1,len(self.vertices)+1):
             if z!= y and z!= x:
               stop = self.pair_reduction(x,y,z,graph_h)
               if not stop:
@@ -248,7 +251,7 @@ class Graph:
     pair_a_c = 0
     pair_b_c = 0
 
-
+    # error is here I believe when creates key. When comparing 1 3 & 4, but there is no 4 in H
     key_a =  create_hash(int(x),int(z),len(self.vertices)) 
     key_b = create_hash(int(y),int(z),len(self.vertices))  
     key = create_hash(int(x),int(y),len(self.vertices))         #no such domain
@@ -259,9 +262,9 @@ class Graph:
       for b_lis in self.list_match_G_H[y]:
         for c_lis in self.list_match_G_H[z]:
           
-          pair_a_c = create_hash(int(a_lis),int(c_lis),len(self.vertices))
-          pair_b_c = create_hash(int(b_lis),int(c_lis),len(self.vertices)) 
-          pair = create_hash(int(a_lis),int(b_lis),len(self.vertices))
+          pair_a_c = create_hash(int(a_lis),int(c_lis),len(graph_h.vertices))
+          pair_b_c = create_hash(int(b_lis),int(c_lis),len(graph_h.vertices)) 
+          pair = create_hash(int(a_lis),int(b_lis),len(graph_h.vertices))
           if pair_a_c in self.list_pairs[key_a] and pair_b_c in self.list_pairs[key_b]:
             eliminate_a_b = False
             break
@@ -311,11 +314,18 @@ class Graph:
     print()
 
   def print_pairs(self):
-    print("\t*** Pairs ***\n")
-    for key,value in sorted(self.list_pairs.items()):
-      print("Key(x,y) "+str(key) + " --> ",str(value))
+    for key,value in graph_g.list_pairs.items():
+      list_pairs = get_x_y_hash(key, len(graph_g.vertices))
+      print("Hash:",key,"--> (",list_pairs[0],",",list_pairs[1],")")
+      print("\tPairs:\t",end="")
+      for pair in value:
+        xy = get_x_y_hash(pair, len(graph_h.vertices))
+        print(pair,"==(",xy[0],",",xy[1],")", end=" ; ")
+      print("")
 
-    print()
+    print("\n")
+
+
 
 
 if len(sys.argv) < 4:
@@ -352,7 +362,3 @@ print("\t*** After Pair Consistency ***\n")
 graph_g.print_pairs()
 
 graph_g.check_homomophism(graph_h)
-
-for key in graph_g.list_pairs:
-  pair = get_x_y_hash(key, len(graph_g.vertices))
-  print(key,pair[0],pair[1])
