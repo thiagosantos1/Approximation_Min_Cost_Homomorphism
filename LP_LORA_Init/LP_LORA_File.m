@@ -11,7 +11,7 @@ if graph_g <1;
 endif
 
 graph_h = fopen("graph_h.mat");
-if graph_h <1;
+if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
 endif
