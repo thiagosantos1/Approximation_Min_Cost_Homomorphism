@@ -1,4 +1,4 @@
-# doing by hand, for example in the slides - Just to be easier to undestand
+        ile# doing by hand, for example in the slides - Just to be easier to undestand
 
 # Xui 
 #   X(u,5), X(u,4), X(u,1), X(u,7)
