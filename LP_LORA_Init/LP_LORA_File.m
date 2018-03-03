@@ -6,7 +6,7 @@
 
 graph_g = fopen("graph_g.mat");
 if graph_g <1;
-  disp("Error opening graph g\n");
+  disp("Error opening graph g\n"); 
   exit(1);
 endif
 
