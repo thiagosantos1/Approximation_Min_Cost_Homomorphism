@@ -187,6 +187,19 @@ for vertex_g=1:length(right_lis_G);
   endfor
 endfor
 
+# function to return the l(i) of a vertex
+# get the first neighbor of a vertex
+function result = get_first_neighbor(vertex, matrix) 
+  result =1;
+  for vertex_pair = 1:length(matrix); 
+    if matrix(vertex,[vertex_pair]) ==1;
+      result = vertex_pair;
+      break;
+    endif
+  endfor
+endfunction
+
+
 # complete the constrants on A, based if there is an edge
 # for each vertex in G side, you check agains all vertex in left side if there is an edge, and vice-versa
 
@@ -197,7 +210,7 @@ for vertex_g_let = left_lis_G;
   # then for each pair, you compare with all vertex in right of G, if there is an edge
     for vertex_g_right = right_lis_G;
       if adj_matrix_g(vertex_g_let,[vertex_g_right]) ==1; # if there is edge
-        pair_h_right = get_first_neighbor(vertex_h_let,adj_matrix_h) # get the first neighbor of 
+        pair_h_right = get_first_neighbor(vertex_h_let,adj_matrix_h); # get the first neighbor of 
         size_A = size(A);
         A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[vertex_h_let] )] )= -1;
         A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_right,[pair_h_right])]) = 1;
@@ -216,7 +229,7 @@ for vertex_g_right = right_lis_G;
   # then for each pair, you compare with all vertex in left of G, if there is an edge
     for vertex_g_left = left_lis_G;
       if adj_matrix_g(vertex_g_right,[vertex_g_left]) ==1; # if there is edge
-        pair_G_right = get_first_neighbor(vertex_h_right,adj_matrix_h) # get the first neighbor of 
+        pair_G_right = get_first_neighbor(vertex_h_right,adj_matrix_h); # get the first neighbor of 
         size_A = size(A);
         A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_right,[vertex_h_right] )] )= -1;
         A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_left,[pair_G_right])]) = 1;
@@ -229,35 +242,25 @@ for vertex_g_right = right_lis_G;
 endfor
 
 
-function result = get_first_neighbor(vertex, matrix) # function to return the l(i) of a vertex
-  result =1
-  for vertex_pair = 1:length(matrix); 
-    if matrix(vertex,[vertex_pair]) ==1;
-      result = vertex_pair;
-      break;
-    endif
-  endfor
-endfunction
 
+#adj_matrix_g
+#left_lis_G
+#right_lis_G
 
-adj_matrix_g
-left_lis_G
-right_lis_G
+#adj_matrix_h
+#left_lis_H
+#right_lis_H
 
-adj_matrix_h
-left_lis_H
-right_lis_H
+#adj_matrix_cost_g_h
 
-adj_matrix_cost_g_h
+#adj_matrix_index_saving
 
-adj_matrix_index_saving
-
-A
-b
-c
-vartype
-lb
-ctype
+#A
+#b
+#c
+#vartype
+#lb
+#ctype
 
 s = 1; % minimixation problem
 param.msglev = 1;
