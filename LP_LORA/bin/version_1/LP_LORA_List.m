@@ -244,16 +244,16 @@ for vertex_g_let = left_lis_G;
     size_A = size(A);
     # add constraint Xui = Xu,i+1 if i not in L(u)
     # if it's the last one, Xup = 0 if p not in L(u)
-    if vertex_h_let >= length(left_lis_H);
-      if adj_matrix_list_homom(vertex_g_let,[vertex_h_let]) != 1;
+    if vertex_h_let >= length(left_lis_H); # means it's the last one
+      if adj_matrix_list_homom(vertex_g_let,[vertex_h_let]) != 1; # i not in L(u)
         A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let])]) = 0;
         ctype = cstrcat(ctype,"L");
         b(end +1) = 0;
       endif
     else
       if adj_matrix_list_homom(vertex_g_let,[vertex_h_let]) != 1; #Xui = Xui+1 if i not in L(u)
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let])]) = 1;
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let+1])]) = 1;
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let])]) = 1; # Xui = 1
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let+1])]) = 1; # Xui+1 = 1
         ctype = cstrcat(ctype,"L");
         b(end +1) = 0;
       endif  
@@ -281,8 +281,9 @@ for vertex_g_right = right_lis_G;
       
     endfor
     
+    # Make sure about this one, cause not sure if we should add for both u and v
     size_A = size(A);
-    # add constraint Xui = Xv,i+1 if i not in L(v)
+    # add constraint Xvi = Xv,i+1 if i not in L(v)
     # if it's the last one, Xvp = 0 if p not in L(v)
     if vertex_h_right >= length(right_lis_H);
       if adj_matrix_list_homom(vertex_g_right,[vertex_h_right]) != 1;
@@ -306,6 +307,7 @@ endfor
 
 # now add constraints based on list_pairs. 
 # Xui - Xu,i+1 <= Sum(Xvj - Xv,j+1) --> For all u,v in G | (i,j) in L(u,v)
+# Thus --> Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
 # L(u,v) = { (i,j), (i,j+1)....}
 # to do that, we gonna use struct, creating a new variable everytime, with Hash, to represent the pair key
 # inside, each two columns represent a pair available for that key
@@ -372,7 +374,7 @@ while (row = fgetl(list_pairs)) >0;
       y = str2num(char(row(range+1)));
       pairs(1,end +1) = x; # one line, 2 columns represent a pair
       pairs(1,end +1) = y;
-    endfor
+    endfor 
     # then, add to struct, the pairs for that key
     dict_pairs.(num2str(key)) = pairs;
   endif
@@ -380,11 +382,138 @@ while (row = fgetl(list_pairs)) >0;
   key_line *= -1; # invert
 endwhile
 
+# function to get all paris saved in the dictionary, based on a key(pair(u,v))
+function pairs = get_pairs_dict(key,dict_pairs) 
+pairs = getfield (dict_pairs, num2str(key));
+endfunction
+
+# function to return if pair(i,j) is in the list(u,v) 
+function isIn = is_pair_list(x_i, y_j, list_pairs)
+  isIn = false;
+  for range = 1:2:length(list_pairs);
+    x = list_pairs(range);
+    y = list_pairs(range+1); 
+    if x == x_i && y == y_j;
+      isIn = true;
+      break;
+    endif
+  endfor
+endfunction
+
 # with the list, we can then run the constraints
 # Xui - Xu,i+1 <= Sum(Xvj - Xv,j+1) --> For all u,v in G | (i,j) in L(u,v)
 # L(u,v) = { (i,j), (i,j+1)....}
+# Thus --> Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
+# L(u,v) = { (i,j), (i,j+1)....}
 
+# first, to verteces U
 
+# for left of G first
+for vertex_g_let = left_lis_G; 
+  # get the first 2 to start
+  # for left of H
+  for range = 1:length(left_lis_H); # for all i in H for u
+    vertex_h_let_i = left_lis_H(range);
+    vertex_h_let_i_ = -1;
+    if range < length(left_lis_H) -1;
+      vertex_h_let_i_ = left_lis_H(range +1);
+    endif
+    # for all ui & ui+1, construct the constraint for all vj & vj+1
+    # for right of G
+    for vertex_g_right = right_lis_G; # for all v
+      # for right of H
+      size_A = size(A); # new line of constraint for every ui,u+1 v # Sum part
+      for range_ = 1:length(right_lis_H); # for all j in h
+        vertex_h_right_j = right_lis_H(range_); 
+        vertex_h_right_j_ = -1;
+        if range_ < length(right_lis_H) -1;
+          vertex_h_right_j_ = right_lis_H(range_ +1); 
+        endif;
+        #Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
+        # get if (i,j) is in the list(u,v)
+        key = create_hash(vertex_g_let,vertex_g_right,num_vert_g); 
+        if isfield(dict_pairs, num2str(key));
+          pairs = get_pairs_dict(key,dict_pairs);
+          # if (i,j) is in the list(u,v), then construct the constraint
+          if is_pair_list(vertex_h_let_i, vertex_h_right_j, pairs) > 0;
+            # for v # for last one, just add 1
+            A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
+            if range_ < length(right_lis_H) -1;
+              A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = -1;
+            endif
+          endif
+        else
+          display("Key already exist in dict_pairs, something is wrong\n") 
+        endif
+        
+       endfor
+       # for u # for last one, just add 1
+       if range < length(left_lis_H) -1;
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = -1;
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = 1;
+       else
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
+       endif
+       
+       ctype = cstrcat(ctype,"L");
+       b(end +1) = 0; 
+       
+    endfor
+  endfor
+endfor
+
+# Now, to verteces V
+
+# for right of G first
+for vertex_g_right = right_lis_G; 
+  # for right of H
+  for range = 1:length(right_lis_H); # from second one -1 lenght. cause we get ui and ui+1
+    vertex_h_right_j = right_lis_H(range); 
+    vertex_h_right_j_ = -1;
+    if range < length(right_lis_H) -1;
+      vertex_h_right_j_ = right_lis_H(range+1);
+    endif
+    # for all vj & vj+1, construct the constraint for all ui & ui+1
+    # for left of G
+    for vertex_g_let = left_lis_G; 
+      # for right of H
+      size_A = size(A);
+      for range_ = 1:length(left_lis_H); # from second one -1 lenght. cause we get ui and ui+1
+         vertex_h_let_i = left_lis_H(range_); 
+         vertex_h_let_i_ = 1;
+         if range_ < length(left_lis_H) -1;
+          vertex_h_let_i_ = left_lis_H(2);
+         endif
+        #Sum(Xui - Xu,i+1) - Xvj + Xv,j+1 >=0
+        # get if (j,i) is in the list(v,u)
+        key = create_hash(vertex_g_right, vertex_g_let, num_vert_g);  
+        if isfield(dict_pairs, num2str(key));
+          pairs = get_pairs_dict(key,dict_pairs);
+          # if (j,i) is in the list(v,u), then construct the constraint
+          if is_pair_list(vertex_h_right_j,vertex_h_let_i, pairs) > 0;
+            # for u
+            A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
+            if range_ < length(left_lis_H) -1;
+              A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = -1;
+            endif
+             
+          endif
+        else
+          display("Key already exist in dict_pairs, something is wrong\n") 
+        endif
+      endfor
+      # for v
+      if range < length(right_lis_H) -1;
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = -1;
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = 1;
+      else
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
+      endif
+      ctype = cstrcat(ctype,"L");
+      b(end +1) = 0;
+    endfor
+  endfor
+endfor
 
 #dict_pairs
 
