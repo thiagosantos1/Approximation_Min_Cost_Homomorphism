@@ -2,6 +2,9 @@
 # Program disegned to check consistency between 2 digraphs, ir order to find if they are homomorphic or not
 # it's given 3 files. Digraph G and Digraph H and a List T with the list of vertices on H that each vertex in G can match with it
 
+# when executing this file, 2 output files is gonna be generated
+# 1) An updated homomophism list from G to h --> list_homom
+# 2) A file with all pairs available in H for each pair in G  --> pairs_list
 import random
 import sys
 from hash import * # use to create key for each pair in the list_pairs
@@ -26,6 +29,8 @@ class Graph:
     self.list_match_G_H = {} # save for each vertex of G, a list of possible vertexes that it may be matched on H
     self.list_pairs = {} # create a list of all pairs based on the reduced list_G_H. Used for path consitency
     self.graph_name = file_name
+    self.list_output_name = "list_homom"
+    self.list_pair_out_name = "list_pairs"
 
     self.init_graph(file_name)
 
@@ -325,7 +330,49 @@ class Graph:
 
     print("\n")
 
+  # save an output file, with the new list available for each vertex in G
+  def save_list_homomophism(self):
+    try:
+      list_output = open(self.list_output_name+".mat", 'w')
+    except IOError as exc:
+      print("Failure opening file " + str(self.list_output_name) + " to write")
+      sys.exit(2)
 
+    size = len(self.list_match_G_H)
+    # since it's sorted, it goes from vertex 1 to n
+    for key,value in sorted(self.list_match_G_H.items()):
+      size -=1
+      for x in range(len(value)):
+        list_output.write(str(value[x]))
+        if x < len(value) -1:
+          list_output.write(" ")
+      if size >0:
+        list_output.write("\n")
+
+  # save an output file, with the new list with pairs available for each vertex in G
+  # it saves in one line the pair in G, and next line with all possible pairs in H, each pair getting 2 columns
+  def save_list_pairs(self):
+    try:
+      list_output = open(self.list_pair_out_name+".mat", 'w')
+    except IOError as exc:
+      print("Failure opening file " + str(self.list_pair_out_name) + " to write")
+      sys.exit(2)
+
+    size = len(self.list_pairs)
+    for key,value in graph_g.list_pairs.items():
+      size -=1
+      list_pairs = get_x_y_hash(key, len(graph_g.vertices))
+      list_output.write(str(list_pairs[0]) + " " + str(list_pairs[1]) + "\n") # key in one line
+      size_value = len(value)
+      for pair in value:
+        size_value -=1
+        xy = get_x_y_hash(pair, len(graph_h.vertices))
+        list_output.write(str(xy[0]) + " " + str(xy[1]))
+        if size_value >0:
+          list_output.write(" ")
+
+      if size >0:
+        list_output.write("\n")
 
 
 if len(sys.argv) < 4:
@@ -362,3 +409,7 @@ print("\t*** After Pair Consistency ***\n")
 graph_g.print_pairs()
 
 graph_g.check_homomophism(graph_h)
+
+
+graph_g.save_list_homomophism()
+graph_g.save_list_pairs()
