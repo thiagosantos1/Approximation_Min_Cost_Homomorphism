@@ -10,13 +10,13 @@ if graph_g <1;
   exit(1);
 endif
 
-graph_h = fopen("graph_h.mat");
+graph_h = fopen("graph_h_2.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
 endif
 
-list_cost_g_h = fopen("list_cost_G_H.mat");
+list_cost_g_h = fopen("list_cost_2.mat");
 if list_cost_g_h <1;
   disp("Error opening list_cost_g_h \n");
   exit(1);
@@ -415,7 +415,7 @@ for vertex_g_let = left_lis_G;
   for range = 1:length(left_lis_H); # for all i in H for u
     vertex_h_let_i = left_lis_H(range);
     vertex_h_let_i_ = -1;
-    if range < length(left_lis_H) -1;
+    if range < length(left_lis_H);
       vertex_h_let_i_ = left_lis_H(range +1);
     endif
     # for all ui & ui+1, construct the constraint for all vj & vj+1
@@ -426,19 +426,22 @@ for vertex_g_let = left_lis_G;
       for range_ = 1:length(right_lis_H); # for all j in h
         vertex_h_right_j = right_lis_H(range_); 
         vertex_h_right_j_ = -1;
-        if range_ < length(right_lis_H) -1;
+        if range_ < length(right_lis_H);
           vertex_h_right_j_ = right_lis_H(range_ +1); 
         endif;
         #Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
         # get if (i,j) is in the list(u,v)
-        key = create_hash(vertex_g_let,vertex_g_right,num_vert_g); 
+        key = create_hash(vertex_g_let,vertex_g_right,num_vert_g) ;
         if isfield(dict_pairs, num2str(key));
           pairs = get_pairs_dict(key,dict_pairs);
           # if (i,j) is in the list(u,v), then construct the constraint
           if is_pair_list(vertex_h_let_i, vertex_h_right_j, pairs) > 0;
+            w=1;
+            range_;
+            length(right_lis_H); 
             # for v # for last one, just add 1
             A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
-            if range_ < length(right_lis_H) -1;
+            if range_ < length(right_lis_H);
               A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = -1;
             endif
           endif
@@ -448,7 +451,7 @@ for vertex_g_let = left_lis_G;
         
        endfor
        # for u # for last one, just add 1
-       if range < length(left_lis_H) -1;
+       if range < length(left_lis_H);
         A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = -1;
         A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = 1;
        else
@@ -470,7 +473,7 @@ for vertex_g_right = right_lis_G;
   for range = 1:length(right_lis_H); # from second one -1 lenght. cause we get ui and ui+1
     vertex_h_right_j = right_lis_H(range); 
     vertex_h_right_j_ = -1;
-    if range < length(right_lis_H) -1;
+    if range < length(right_lis_H);
       vertex_h_right_j_ = right_lis_H(range+1);
     endif
     # for all vj & vj+1, construct the constraint for all ui & ui+1
@@ -481,20 +484,21 @@ for vertex_g_right = right_lis_G;
       for range_ = 1:length(left_lis_H); # from second one -1 lenght. cause we get ui and ui+1
          vertex_h_let_i = left_lis_H(range_); 
          vertex_h_let_i_ = 1;
-         if range_ < length(left_lis_H) -1;
-          vertex_h_let_i_ = left_lis_H(2);
+         if range_ < length(left_lis_H);
+          vertex_h_let_i_ = left_lis_H(range_+1);
          endif
         #Sum(Xui - Xu,i+1) - Xvj + Xv,j+1 >=0
         # get if (j,i) is in the list(v,u)
-        key = create_hash(vertex_g_right, vertex_g_let, num_vert_g);  
+        key = create_hash(vertex_g_right, vertex_g_let, num_vert_g);
         if isfield(dict_pairs, num2str(key));
           pairs = get_pairs_dict(key,dict_pairs);
           # if (j,i) is in the list(v,u), then construct the constraint
           if is_pair_list(vertex_h_right_j,vertex_h_let_i, pairs) > 0;
             # for u
             A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
-            if range_ < length(left_lis_H) -1;
+            if range_ < length(left_lis_H);
               A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = -1;
+              
             endif
              
           endif
@@ -503,9 +507,10 @@ for vertex_g_right = right_lis_G;
         endif
       endfor
       # for v
-      if range < length(right_lis_H) -1;
+      if range < length(right_lis_H);
         A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = -1;
         A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = 1;
+        
       else
         A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
       endif

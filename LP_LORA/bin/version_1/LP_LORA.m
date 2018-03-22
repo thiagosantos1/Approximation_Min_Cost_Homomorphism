@@ -10,13 +10,13 @@ if graph_g <1;
   exit(1);
 endif
 
-graph_h = fopen("graph_h.mat");
+graph_h = fopen("graph_h_2.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
 endif
 
-list_cost_g_h = fopen("list_cost_G_H.mat");
+list_cost_g_h = fopen("list_cost_2.mat");
 if list_cost_g_h <1;
   disp("Error opening list_cost_g_h \n");
   exit(1);
