@@ -541,11 +541,16 @@ endfor
 #lb
 #ctype
 
+# add constrain for a specific H graph 
+
+
+
+
 s = 1; % minimixation problem
 param.msglev = 1;
 
-#[xmin] = glpk(c, A, b, lb, ub, ctype, vartype, s, param)
+[xmin] = glpk(c, A, b, lb, ub, ctype, vartype, s, param)
 
-#result = c * xmin
+result = c * xmin
 
 
