@@ -550,8 +550,8 @@ for vertex_g_let = left_lis_G;
   for vertex_g_right = right_lis_G;
     if adj_matrix_g(vertex_g_let,[vertex_g_right]) ==1; # if there is edge
       size_A = size(A);
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_right,[7])]) = 1;
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[2] )] )= -1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_right,[7])]) = -1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[2] )] )= 1;
       A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[3] )] )= -1;
       A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[4] )] )=  1;
       ctype = cstrcat(ctype,"L");
