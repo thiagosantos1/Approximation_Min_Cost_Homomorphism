@@ -8,6 +8,7 @@
 import random
 import sys
 from hash import * # use to create key for each pair in the list_pairs
+import os # to get full directory
 
 class Vertex:
   def __init__(self, n):
@@ -31,8 +32,11 @@ class Graph:
     self.graph_name = file_name
     self.list_output_name = "list_homom"
     self.list_pair_out_name = "list_pairs"
+    self.path = ""
+    self.sub_path = "/../../LP_LORA/bin/version_1/" # to save the file in the LP folder automatic
+    self.init_graph_elist(file_name)
+    #self.init_graph_matrix(file_name)
 
-    self.init_graph(file_name)
 
   def add_vertex(self, vertex): # add a new vertex to the graph
     if isinstance(vertex, Vertex) and vertex.name not in self.vertices:
@@ -59,7 +63,7 @@ class Graph:
     else:
       return False
   
-  def init_graph(self,file_name):
+  def init_graph_matrix(self,file_name):
 
     try:
       graph_file = open(file_name, 'r')
@@ -81,6 +85,28 @@ class Graph:
             edge +=1
 
       vertex +=1
+
+  def init_graph_elist(self,file_name):
+    # first initialize the path
+    abs_path = os.getcwd()
+    self.path = abs_path + self.sub_path
+    # first line of file contains how many vertices in file
+    try:
+      graph_file = open(file_name, 'r')
+    except IOError as exc:
+      print("Failure opening file " + str(file_name) )
+      sys.exit(2)
+
+    num_vertices = int(graph_file.readline())
+    for x in range(1,num_vertices+1):
+      self.add_vertex(Vertex(x))
+     
+    lines = graph_file.readlines()
+    for line in lines:
+      xy = line.split(' ')  
+      self.add_edge(int(xy[0])+1,int(xy[1])+1)
+
+
 
   def init_list(self,file_name):
 
@@ -333,7 +359,7 @@ class Graph:
   # save an output file, with the new list available for each vertex in G
   def save_list_homomophism(self):
     try:
-      list_output = open(self.list_output_name+".mat", 'w')
+      list_output = open(self.path+'/'+self.list_output_name+".mat", 'w')
     except IOError as exc:
       print("Failure opening file " + str(self.list_output_name) + " to write")
       sys.exit(2)
@@ -353,7 +379,7 @@ class Graph:
   # it saves in one line the pair in G, and next line with all possible pairs in H, each pair getting 2 columns
   def save_list_pairs(self):
     try:
-      list_output = open(self.list_pair_out_name+".mat", 'w')
+      list_output = open(self.path+'/'+self.list_pair_out_name+".mat", 'w')
     except IOError as exc:
       print("Failure opening file " + str(self.list_pair_out_name) + " to write")
       sys.exit(2)
@@ -373,7 +399,6 @@ class Graph:
 
       if size >0:
         list_output.write("\n")
-
 
 if len(sys.argv) < 4:
   print("Please provide <FileGraph_G>, <FileGraph_H> & FileList_G_H\n")
