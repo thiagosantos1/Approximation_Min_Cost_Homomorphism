@@ -4,19 +4,19 @@
 
 # This LP uses the pair list(list homomisph). We first run pair consistency in the python program
 # Then, use the updated list to run our LP faster.
-graph_g = fopen("graph_g_2.mat");
+graph_g = fopen("graph_g.mat");
 if graph_g <1;
   disp("Error opening graph g\n"); 
   exit(1);
 endif
 
-graph_h = fopen("graph_h_2.mat");
+graph_h = fopen("graph_h_3.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
 endif
 
-list_cost_g_h = fopen("list_cost_2.mat");
+list_cost_g_h = fopen("list_cost.mat");
 if list_cost_g_h <1;
   disp("Error opening list_cost_g_h \n");
   exit(1);

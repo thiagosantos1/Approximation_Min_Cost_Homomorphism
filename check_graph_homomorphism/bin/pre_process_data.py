@@ -2,13 +2,14 @@
 # Get's a file with an edge list, and creates a new cost list, with randowm cost of maping 
 import os # to get full directory
 import random
+import sys
 
 def process_data(graph_g, graph_h):
   sub_path = "/../../LP_LORA/bin/version_1/" # to save the file in the LP folder automatic
   abs_path = os.getcwd()
   path = abs_path + sub_path + "list_cost.mat"
   min_rand = 5
-  max_rand = 100
+  max_rand = 300
   # for G first
   try:
     graph_file = open(graph_g, 'r')
@@ -103,4 +104,13 @@ def process_data(graph_g, graph_h):
     list_out.write("\n")
 
 
-process_data("graph_g.txt", "graph_h.txt")
+
+if len(sys.argv) < 3:
+  print("Please provide <FileGraph_G>, <FileGraph_H> \n")
+  sys.exit(1)
+
+file_g = sys.argv[1]
+file_h = sys.argv[2]
+print("\t*** Starting creating full list homomophism ***")
+process_data(file_g, file_h)
+print("\t*** List homomophism created ***")

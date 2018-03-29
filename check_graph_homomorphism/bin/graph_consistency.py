@@ -412,29 +412,30 @@ graph_g = Graph(file_g)
 graph_h = Graph(file_h)
 
 
-graph_g.print_graph()
-graph_h.print_graph()
+#graph_g.print_graph()
+#graph_h.print_graph()
 
 graph_g.init_list(file_list)
-print("\t*** Before reduction ***",end="")
-graph_g.print_list_G_H()
+print("\t*** reduction process started ***")
+#graph_g.print_list_G_H()
 
 graph_g.arc_consistency(graph_h)
 
-print("\t*** After reduction ***",end="")
-graph_g.print_list_G_H()
+print("\t*** reduction done ***")
+#graph_g.print_list_G_H()
 
+print("\t*** making pairs and executing arc consistency have started ***")
 graph_g.make_pairs(graph_h)
 
-graph_g.print_pairs()
+#graph_g.print_pairs()
 
-graph_g.pair_consistency(graph_h)
+#graph_g.pair_consistency(graph_h)
 
-print("\t*** After Pair Consistency ***\n")
-graph_g.print_pairs()
+print("\t*** Pair List & Pair Consistency Done ***")
+#graph_g.print_pairs()
 
-graph_g.check_homomophism(graph_h)
+#graph_g.check_homomophism(graph_h)
 
-
+print("\t*** Saving list homomophism and list pairs in LP octave folder ***")
 graph_g.save_list_homomophism()
 graph_g.save_list_pairs()

@@ -4,19 +4,19 @@
 # partition in G and H. That is gonna be how we create our variables
 # We also have to read file that contains the cost of maping each vertex in G for a vertex in H
 
-graph_g = fopen("graph_g_2.mat");
+graph_g = fopen("graph_g.mat");
 if graph_g <1;
   disp("Error opening graph g\n"); 
   exit(1);
 endif
 
-graph_h = fopen("graph_h_2.mat");
+graph_h = fopen("graph_h_3.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
 endif
 
-list_cost_g_h = fopen("list_cost_2.mat");
+list_cost_g_h = fopen("list_cost.mat");
 if list_cost_g_h <1;
   disp("Error opening list_cost_g_h \n");
   exit(1);
@@ -243,19 +243,19 @@ endfor
 
 
 
-# add constrain for a specific H graph, to see how the LP is gonna behave.  
-# Xu2 - Xu3 + Xu4 >= Xv7
-# Xv7 - Xu2 - Xu3 + Xu4 >= 0
+# add constrain for a specific H(graph_h_2) graph, to see how the LP is gonna behave.  
+# Xu4 <= Xv6 - Xv7
+# Xv6 - Xv7 >= Xu4
+# Xv6 - Xv7 - Xu4 >= 0
 # for left of G first
 for vertex_g_let = left_lis_G; 
   # then for each pair, you compare with all vertex in right of G, if there is an edge
   for vertex_g_right = right_lis_G;
     if adj_matrix_g(vertex_g_let,[vertex_g_right]) ==1; # if there is edge
       size_A = size(A);
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_right,[6])]) =  1;
       A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_right,[7])]) = -1;
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[2] )] )= 1;
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[3] )] )= -1;
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[4] )] )=  1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_let,[4] )] )= -1;
       ctype = cstrcat(ctype,"L");
       b(end +1) = 0;
     endif
