@@ -9,7 +9,7 @@ def process_data(graph_g, graph_h):
   abs_path = os.getcwd()
   path = abs_path + sub_path + "list_cost.mat"
   min_rand = 5
-  max_rand = 300
+  max_rand = 1000
   # for G first
   try:
     graph_file = open(graph_g, 'r')
@@ -111,6 +111,6 @@ if len(sys.argv) < 3:
 
 file_g = sys.argv[1]
 file_h = sys.argv[2]
-print("\t*** Starting creating full list homomophism ***")
+print("\t*** Starting creating full list homomophism and random list cost for bipartite ggraph***")
 process_data(file_g, file_h)
-print("\t*** List homomophism created ***")
+print("\t*** List homomophism created and list cost created ***")

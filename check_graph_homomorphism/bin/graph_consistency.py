@@ -24,7 +24,7 @@ class Vertex:
 
 class Graph:
   
-  def __init__(self, file_name):
+  def __init__(self, file_name,type_graph):
     # Variables for each instance of Graph
     self.vertices = {} # dictionary for all vertexes
     self.list_match_G_H = {} # save for each vertex of G, a list of possible vertexes that it may be matched on H
@@ -34,7 +34,7 @@ class Graph:
     self.list_pair_out_name = "list_pairs"
     self.path = ""
     self.sub_path = "/../../LP_LORA/bin/version_1/" # to save the file in the LP folder automatic
-    self.init_graph_elist(file_name)
+    self.init_graph_elist(file_name,type_graph)
     #self.init_graph_matrix(file_name)
 
 
@@ -86,7 +86,7 @@ class Graph:
 
       vertex +=1
 
-  def init_graph_elist(self,file_name):
+  def init_graph_elist(self,file_name,type_graph):
     # first initialize the path
     abs_path = os.getcwd()
     self.path = abs_path + self.sub_path
@@ -105,6 +105,8 @@ class Graph:
     for line in lines:
       xy = line.split(' ')  
       self.add_edge(int(xy[0])+1,int(xy[1])+1)
+      if type_graph ==1: # if it's a graph, add edge in both directions
+        self.add_edge(int(xy[1])+1,int(xy[0])+1)
 
 
 
@@ -400,16 +402,17 @@ class Graph:
       if size >0:
         list_output.write("\n")
 
-if len(sys.argv) < 4:
-  print("Please provide <FileGraph_G>, <FileGraph_H> & FileList_G_H\n")
+if len(sys.argv) < 5:
+  print("Please provide <FileGraph_G>, <FileGraph_H>, FileList_G_H & <1 or 2 (1 for graph, 2 for diagraph)> \n")
   sys.exit(1)
 
 file_g = sys.argv[1]
 file_h = sys.argv[2]
 file_list = sys.argv[3]
+type_graph = int(sys.argv[4])
 
-graph_g = Graph(file_g)
-graph_h = Graph(file_h)
+graph_g = Graph(file_g,type_graph)
+graph_h = Graph(file_h,type_graph)
 
 
 #graph_g.print_graph()
@@ -439,3 +442,5 @@ print("\t*** Pair List & Pair Consistency Done ***")
 print("\t*** Saving list homomophism and list pairs in LP octave folder ***")
 graph_g.save_list_homomophism()
 graph_g.save_list_pairs()
+
+graph_g.print_graph()
