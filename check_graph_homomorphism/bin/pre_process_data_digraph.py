@@ -9,7 +9,7 @@ def process_data(graph_g, graph_h):
   abs_path = os.getcwd()
   path = abs_path + sub_path + "list_cost.mat"
   min_rand = 5
-  max_rand = 100
+  max_rand = 10000
   # for G first
   try:
     graph_file = open(graph_g, 'r')

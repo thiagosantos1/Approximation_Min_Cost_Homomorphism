@@ -470,7 +470,7 @@ for vertex_g_let = left_lis_G;
           A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = -1;
           A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = 1;
          else
-          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = -1;
          endif
          
          ctype = cstrcat(ctype,"L");
@@ -542,7 +542,7 @@ for vertex_g_right = right_lis_G;
           A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = 1;
           
         else
-          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = -1;
         endif
         ctype = cstrcat(ctype,"L");
         b(end +1) = 0;

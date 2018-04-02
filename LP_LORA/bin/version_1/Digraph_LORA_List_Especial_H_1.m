@@ -454,6 +454,26 @@ for g_u = vertices_graph_g;
   endfor
 endfor
 
+# add constrain for a specific H graph, to see how the LP is gonna behave.  
+# Xu2 - Xu3 + Xu4 >= Xv7
+# - Xv7 + Xu2 - Xu3 + Xu4 >= 0
+# for left of G first
+for vertex_g = vertices_graph_g; 
+  # then for each pair, you compare with all vertex in right of G, if there is an edge
+  for vertex_g_ = vertices_graph_g;
+    if adj_matrix_g(vertex_g,[vertex_g_]) ==1; # if there is edge
+      size_A = size(A);
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_,[7])]) = -1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[2] )] )= 1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[3] )] )= -1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[4] )] )=  1;
+      ctype = cstrcat(ctype,"L");
+      b(end +1) = 0;
+    endif
+  endfor
+endfor
+    
+
 
 s = 1; % minimixation problem
 param.msglev = 1;

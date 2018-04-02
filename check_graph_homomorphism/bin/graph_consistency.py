@@ -132,8 +132,9 @@ class Graph:
 
     vertex = 1
     for line in lines:
-      for v in line:
-          if v != '\n' and v != ' ':
+
+      for v in line.split(" "):
+          if v != '\n' and v != " ":
             self.add_vertex_list(vertex, int(v))
 
       vertex +=1
@@ -420,7 +421,7 @@ graph_h = Graph(file_h,type_graph)
 
 graph_g.init_list(file_list)
 print("\t*** reduction process started ***")
-#graph_g.print_list_G_H()
+graph_g.print_list_G_H()
 
 graph_g.arc_consistency(graph_h)
 

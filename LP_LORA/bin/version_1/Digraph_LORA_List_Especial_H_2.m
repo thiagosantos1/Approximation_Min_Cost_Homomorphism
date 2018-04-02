@@ -10,7 +10,7 @@ if graph_g <1;
   exit(1);
 endif
 
-graph_h = fopen("graph_h_1.mat");
+graph_h = fopen("di_claw.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
@@ -65,6 +65,7 @@ lb = [];
 ub = [];
 ctype = "";
 vartype = ""; 
+type_solution = "I";
 
 # reading for G
 while (row = fgetl(graph_g)) >0;
@@ -139,13 +140,13 @@ for vertex_g=1:size_adj(1);
         c(end +1) = adj_matrix_cost_g_h(vertex_g, [vertex_h]);
         adj_matrix_index_saving(vertex_g, [vertex_h]) = length(c);
         
-        vartype = cstrcat(vartype,"C");
+        vartype = cstrcat(vartype,type_solution);
         lb(end +1) = 0;
         start = 1;
       else
         c(end +1) = adj_matrix_cost_g_h(vertex_g, [vertex_h]) - adj_matrix_cost_g_h(vertex_g, [vertex_h-1]);
         adj_matrix_index_saving(vertex_g, [vertex_h]) = length(c);
-        vartype =cstrcat(vartype,"C");
+        vartype =cstrcat(vartype,type_solution);
         lb(end +1) = 0;
       endif
     else
@@ -405,11 +406,7 @@ for g_u = vertices_graph_g;
         # now, for all ui & ui+1, construct the constraint for all vj & vj+1
         for g_v = vertices_graph_g; # for all v
           if g_u != g_v;
-              display("begin")
-               g_u
-               g_v
-               h_i
-               h_i_
+              
             size_A = size(A); # new line of constraint for every ui,u+1 v # Sum part
             for range_ = 1:length(vertices_graph_h); # for all j in h
               h_j = vertices_graph_h(range_); 
@@ -424,10 +421,7 @@ for g_u = vertices_graph_g;
                   pairs = get_pairs_dict(key,dict_pairs);
                   # if (i,j) is in the list(u,v), then construct the constraint
                   if is_pair_list(h_i, h_j, pairs) > 0;
-                    display("Sum of")
-                    h_j
-                    h_j_                 
-                    display("end")
+              
                     length(vertices_graph_h); 
                     A(size_A(1)+1,[adj_matrix_index_saving(g_v,[h_j])]) = 1;
                     if range_ < length(vertices_graph_h);
@@ -454,10 +448,30 @@ for g_u = vertices_graph_g;
   endfor
 endfor
 
+# add constrain for a specific H graph, to see how the LP is gonna behave.  
+# Xu2 - Xu3 + Xu4 >= Xv7
+# - Xv7 + Xu2 - Xu3 + Xu4 >= 0
+# for left of G first
+for vertex_g = vertices_graph_g; 
+  # then for each pair, you compare with all vertex in right of G, if there is an edge
+  for vertex_g_ = vertices_graph_g;
+    if adj_matrix_g(vertex_g,[vertex_g_]) ==1; # if there is edge
+      size_A = size(A);
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_,[10])]) = -1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[5] )] )= 1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[6] )] )= -1;
+      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[7] )] )=  1;
+      ctype = cstrcat(ctype,"L");
+      b(end +1) = 0;
+    endif
+  endfor
+endfor
+    
+
 
 s = 1; % minimixation problem
 param.msglev = 1;
 
-[xmin] = glpk(c, A, b, lb, ub, ctype, vartype, s, param)
-result = c * xmin
+#[xmin] = glpk(c, A, b, lb, ub, ctype, vartype, s, param)
+#result = c * xmin
 
