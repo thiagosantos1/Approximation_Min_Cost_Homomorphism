@@ -10,7 +10,7 @@ if graph_g <1;
   exit(1);
 endif
 
-graph_h = fopen("graph_h_3.mat");
+graph_h = fopen("graph_h_1.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
@@ -420,48 +420,64 @@ for vertex_g_let = left_lis_G;
     endif
     # for all ui & ui+1, construct the constraint for all vj & vj+1
     # for right of G
-    for vertex_g_right = right_lis_G; # for all v
-      # for right of H
-      size_A = size(A); # new line of constraint for every ui,u+1 v # Sum part
-      for range_ = 1:length(right_lis_H); # for all j in h
-        vertex_h_right_j = right_lis_H(range_); 
-        vertex_h_right_j_ = -1;
-        if range_ < length(right_lis_H);
-          vertex_h_right_j_ = right_lis_H(range_ +1); 
-        endif;
-        #Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
-        # get if (i,j) is in the list(u,v)
-        key = create_hash(vertex_g_let,vertex_g_right,num_vert_g) ;
-        if isfield(dict_pairs, num2str(key));
-          pairs = get_pairs_dict(key,dict_pairs);
-          # if (i,j) is in the list(u,v), then construct the constraint
-          if is_pair_list(vertex_h_let_i, vertex_h_right_j, pairs) > 0;
-            w=1;
-            range_;
-            length(right_lis_H); 
-            # for v # for last one, just add 1
-            A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
-            if range_ < length(right_lis_H);
-              A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = -1;
-            endif
-          endif
-        else
-          display("Key already exist in dict_pairs, something is wrong\n") 
+    
+    i_is_in_gu = false;
+    # check if i and i+1 is in the list of U first. Then, add the constraint
+    if adj_matrix_list_homom(vertex_g_let,[vertex_h_let_i]) == 1; 
+      if  vertex_h_let_i_ != -1;
+        if adj_matrix_list_homom(vertex_g_let,[vertex_h_let_i_]) == 1; 
+           i_is_in_gu = true;
         endif
-        
-       endfor
-       # for u # for last one, just add 1
-       if range < length(left_lis_H);
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = -1;
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = 1;
-       else
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
-       endif
-       
-       ctype = cstrcat(ctype,"L");
-       b(end +1) = 0; 
-       
-    endfor
+      else
+        i_is_in_gu = true;
+      endif
+    endif
+      
+    if i_is_in_gu == true; 
+     
+      for vertex_g_right = right_lis_G; # for all v
+        # for right of H
+        size_A = size(A); # new line of constraint for every ui,u+1 v # Sum part
+        for range_ = 1:length(right_lis_H); # for all j in h
+          vertex_h_right_j = right_lis_H(range_); 
+          vertex_h_right_j_ = -1;
+          if range_ < length(right_lis_H);
+            vertex_h_right_j_ = right_lis_H(range_ +1); 
+          endif;
+          #Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
+          # get if (i,j) is in the list(u,v)
+          key = create_hash(vertex_g_let,vertex_g_right,num_vert_g) ;
+          if isfield(dict_pairs, num2str(key));
+            pairs = get_pairs_dict(key,dict_pairs);
+            # if (i,j) is in the list(u,v), then construct the constraint
+            if is_pair_list(vertex_h_let_i, vertex_h_right_j, pairs) > 0;
+              w=1;
+              range_;
+              length(right_lis_H); 
+              # for v # for last one, just add 1
+              A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
+              if range_ < length(right_lis_H);
+                A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = -1;
+              endif
+            endif
+          else
+            display("Key already exist in dict_pairs, something is wrong\n") 
+          endif
+          
+         endfor
+         # for u # for last one, just add 1
+         if range < length(left_lis_H);
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = -1;
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = 1;
+         else
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
+         endif
+         
+         ctype = cstrcat(ctype,"L");
+         b(end +1) = 0; 
+         
+      endfor
+    endif
   endfor
 endfor
 
@@ -478,45 +494,60 @@ for vertex_g_right = right_lis_G;
     endif
     # for all vj & vj+1, construct the constraint for all ui & ui+1
     # for left of G
-    for vertex_g_let = left_lis_G; 
-      # for right of H
-      size_A = size(A);
-      for range_ = 1:length(left_lis_H); # from second one -1 lenght. cause we get ui and ui+1
-         vertex_h_let_i = left_lis_H(range_); 
-         vertex_h_let_i_ = 1;
-         if range_ < length(left_lis_H);
-          vertex_h_let_i_ = left_lis_H(range_+1);
-         endif
-        #Sum(Xui - Xu,i+1) - Xvj + Xv,j+1 >=0
-        # get if (j,i) is in the list(v,u)
-        key = create_hash(vertex_g_right, vertex_g_let, num_vert_g);
-        if isfield(dict_pairs, num2str(key));
-          pairs = get_pairs_dict(key,dict_pairs);
-          # if (j,i) is in the list(v,u), then construct the constraint
-          if is_pair_list(vertex_h_right_j,vertex_h_let_i, pairs) > 0;
-            # for u
-            A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
-            if range_ < length(left_lis_H);
-              A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = -1;
-              
-            endif
-             
-          endif
-        else
-          display("Key already exist in dict_pairs, something is wrong\n") 
+    i_is_in_gu = false;
+    # check if i and i+1 is in the list of U first. Then, add the constraint
+    if adj_matrix_list_homom(vertex_g_right,[vertex_h_right_j]) == 1; 
+      if  vertex_h_right_j_ != -1;
+        if adj_matrix_list_homom(vertex_g_right,[vertex_h_right_j_]) == 1; 
+           i_is_in_gu = true;
         endif
-      endfor
-      # for v
-      if range < length(right_lis_H);
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = -1;
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = 1;
-        
       else
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
+        i_is_in_gu = true;
       endif
-      ctype = cstrcat(ctype,"L");
-      b(end +1) = 0;
-    endfor
+    endif
+      
+    if i_is_in_gu == true; 
+    
+      for vertex_g_let = left_lis_G; 
+        # for right of H
+        size_A = size(A);
+        for range_ = 1:length(left_lis_H); # from second one -1 lenght. cause we get ui and ui+1
+           vertex_h_let_i = left_lis_H(range_); 
+           vertex_h_let_i_ = 1;
+           if range_ < length(left_lis_H);
+            vertex_h_let_i_ = left_lis_H(range_+1);
+           endif
+          #Sum(Xui - Xu,i+1) - Xvj + Xv,j+1 >=0
+          # get if (j,i) is in the list(v,u)
+          key = create_hash(vertex_g_right, vertex_g_let, num_vert_g);
+          if isfield(dict_pairs, num2str(key));
+            pairs = get_pairs_dict(key,dict_pairs);
+            # if (j,i) is in the list(v,u), then construct the constraint
+            if is_pair_list(vertex_h_right_j,vertex_h_let_i, pairs) > 0;
+              # for u
+              A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i])]) = 1;
+              if range_ < length(left_lis_H);
+                A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_let,[vertex_h_let_i_])]) = -1;
+                
+              endif
+               
+            endif
+          else
+            display("Key already exist in dict_pairs, something is wrong\n") 
+          endif
+        endfor
+        # for v
+        if range < length(right_lis_H);
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = -1;
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j_])]) = 1;
+          
+        else
+          A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_right,[vertex_h_right_j])]) = 1;
+        endif
+        ctype = cstrcat(ctype,"L");
+        b(end +1) = 0;
+      endfor
+    endif
   endfor
 endfor
 
