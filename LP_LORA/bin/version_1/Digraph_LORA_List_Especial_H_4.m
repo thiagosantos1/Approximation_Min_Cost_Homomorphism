@@ -10,7 +10,7 @@ if graph_g <1;
   exit(1);
 endif
 
-graph_h = fopen("di_claw.mat");
+graph_h = fopen("graph_h_4.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
@@ -65,7 +65,7 @@ lb = [];
 ub = [];
 ctype = "";
 vartype = ""; 
-type_solution = "C";
+type_solution = "I";
 
 # reading for G
 while (row = fgetl(graph_g)) >0;
@@ -447,27 +447,6 @@ for g_u = vertices_graph_g;
     endif    
   endfor
 endfor
-
-# add constrain for a specific H graph, to see how the LP is gonna behave.  
-# Xu2 - Xu3 + Xu4 >= Xv7
-# - Xv7 + Xu2 - Xu3 + Xu4 >= 0
-# for left of G first
-for vertex_g = vertices_graph_g; 
-  # then for each pair, you compare with all vertex in right of G, if there is an edge
-  for vertex_g_ = vertices_graph_g;
-    if adj_matrix_g(vertex_g,[vertex_g_]) ==1; # if there is edge
-      size_A = size(A);
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g_,[10])]) = -1;
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[5] )] )= 1;
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[6] )] )= -1;
-      A(size_A(1) +1, [adj_matrix_index_saving(vertex_g,[7] )] )=  1;
-      ctype = cstrcat(ctype,"L");
-      b(end +1) = 0;
-    endif
-  endfor
-endfor
-    
-
 
 s = 1; % minimixation problem
 param.msglev = 1;

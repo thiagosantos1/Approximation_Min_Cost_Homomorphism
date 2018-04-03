@@ -421,22 +421,24 @@ graph_h = Graph(file_h,type_graph)
 
 graph_g.init_list(file_list)
 print("\t*** reduction process started ***")
-graph_g.print_list_G_H()
+#graph_g.print_list_G_H()
 
 graph_g.arc_consistency(graph_h)
 
 print("\t*** reduction done ***")
-graph_g.print_list_G_H()
+#graph_g.print_list_G_H()
 
-print("\t*** making pairs and executing arc consistency have started ***")
+print("\t*** making pairs ***");
 graph_g.make_pairs(graph_h)
+print("\t*** making pairs is done***");
+#graph_g.print_pairs()
 
-graph_g.print_pairs()
 
+print("\t*** Arc consistency have started ***")
 graph_g.pair_consistency(graph_h)
 
 print("\t*** Pair List & Pair Consistency Done ***")
-graph_g.print_pairs()
+#graph_g.print_pairs()
 
 #graph_g.check_homomophism(graph_h)
 
