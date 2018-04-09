@@ -425,16 +425,16 @@ print("\t*** reduction process started ***")
 
 graph_g.arc_consistency(graph_h)
 
-print("\t*** reduction done ***")
+print("\t*** reduction is done ***")
 #graph_g.print_list_G_H()
 
-print("\t*** making pairs ***");
+print("\t*** making pairs has started ***");
 graph_g.make_pairs(graph_h)
 print("\t*** making pairs is done***");
 #graph_g.print_pairs()
 
 
-print("\t*** Arc consistency have started ***")
+print("\t*** Arc consistency has started ***")
 graph_g.pair_consistency(graph_h)
 
 print("\t*** Pair List & Pair Consistency Done ***")
