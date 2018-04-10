@@ -37,12 +37,15 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	last_index = num_partition-2
 	last = partitions[last_index][len(partitions[last_index])-1]
 	partitions[last_index+1] = [y for y in range(last+1,num_vertices)]
-
 	list_output.write(str(num_vertices) + "\n") 
 	list_output_octave.write(str(num_vertices) + "\n") 
 	for x in range(0, len(partitions) -1):
-		bi_partition_vertices = partitions[x] # vertices
-		bi_partition_edges_vertices = partitions[x+1] # to connect with edges
+		bi_partition_vertices = []
+		bi_partition_vertices.extend(partitions[x]) # vertices
+		bi_partition_edges_vertices = []
+		bi_partition_edges_vertices.extend(partitions[x+1]) # to connect with edges
+		if x < len(partitions) -2:
+			bi_partition_edges_vertices.extend(partitions[x+2]) 
 
 		for vertice in bi_partition_vertices:
 			rand_num_edges = random.randint(1, len(bi_partition_edges_vertices))
@@ -62,7 +65,6 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 					list_output.write("\n")
 					list_output_octave.write("\n")
 		
-
 if len(sys.argv) < 4:
   print("Please provide <num_vertices>, <num_of_partition(>=2)> & <output_name>\n")
   sys.exit(1)
