@@ -434,8 +434,8 @@ print("\t*** making pairs is done***");
 #graph_g.print_pairs()
 
 
-# print("\t*** Arc consistency has started ***")
-# graph_g.pair_consistency(graph_h)
+print("\t*** Arc consistency has started ***")
+#graph_g.pair_consistency(graph_h)
 
 # print("\t*** Pair List & Pair Consistency Done ***")
 #graph_g.print_pairs()

@@ -10,7 +10,7 @@ if graph_g <1;
   exit(1);
 endif
 
-graph_h = fopen("graph_h_unbalacend.mat");
+graph_h = fopen("graph_h.mat");
 if graph_h <1; 
   disp("Error opening graph h\n");
   exit(1);
