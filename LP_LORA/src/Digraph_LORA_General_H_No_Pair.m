@@ -387,8 +387,7 @@ for u = vertices_graph_g;
                           endif
                         endif
                       endfor
-                    endif
-                    
+                    endif                
                   endif
                 endif
               endif
