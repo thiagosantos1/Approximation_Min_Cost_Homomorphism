@@ -160,6 +160,8 @@ endfor
 # **** Have to check this. Because now we don't have a min ordering ***
 # create first constrants based on min ordering
 # for every vertex in G 
+# Constraint Xui - Xui+1 >=0
+
 size_A = size(A);
 for vertex_g=1:length(vertices_graph_g);
   start = -1;
@@ -169,7 +171,7 @@ for vertex_g=1:length(vertices_graph_g);
     if start <=0;
       A(size_A(1)+1,[size_A(2)+1])= 1;
       b(end +1) = 1;
-      ctype = cstrcat(ctype,"L");
+      ctype = cstrcat(ctype,"S");
       start = 1;
     else
       A(size_A(1)+1,[size_A(2)+1]) = -1;
@@ -223,15 +225,15 @@ for vertex_g_u = vertices_graph_g;
     # if it's the last one, Xup = 0 if p not in L(u)
     if vertex_h_i >= length(vertices_graph_h); # means it's the last one
       if adj_matrix_list_homom(vertex_g_u,[vertex_h_i]) != 1; # i not in L(u)
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_u,[vertex_h_i])]) = 0;
-        ctype = cstrcat(ctype,"L");
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_u,[vertex_h_i])]) = 1;
+        ctype = cstrcat(ctype,"S");
         b(end +1) = 0;
       endif
     else
       if adj_matrix_list_homom(vertex_g_u,[vertex_h_i]) != 1; #Xui = Xui+1 if i not in L(u)
         A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_u,[vertex_h_i])]) = 1; # Xui = 1
-        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_u,[vertex_h_i+1])]) = 1; # Xui+1 = 1
-        ctype = cstrcat(ctype,"L");
+        A(size_A(1)+1,[adj_matrix_index_saving(vertex_g_u,[vertex_h_i+1])]) = -1; # Xui+1 = 1
+        ctype = cstrcat(ctype,"S");
         b(end +1) = 0;
       endif  
     

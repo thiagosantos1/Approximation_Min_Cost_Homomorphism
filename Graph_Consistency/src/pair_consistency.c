@@ -229,27 +229,38 @@ int pair_reduction(int num_vert_G,int num_vert_H, int x, int y, int z)
 
 							// get the byte and bit of each key 
 							GET_BYTE_POSITION(byte_position,NUM_BYTES,pair_a_c);
-			  			GET_BIT_POSITION(bit_position,NUM_BYTES,pair_a_c,byte_position);
-			  			// if pair_a_c is in the list of key_a (if its bit is set)
-			  			if( (READ_BIT(pairs_matrix[key_a][byte_position],bit_position)) >0){
-			  				// pair_b_c also must be in the list of key_b
-			  				GET_BYTE_POSITION(byte_position,NUM_BYTES,pair_b_c);
-				  			GET_BIT_POSITION(bit_position,NUM_BYTES,pair_b_c,byte_position);
-				  			// if pair_b_c is in the list of key_a (if its bit is set)
-				  			if( (READ_BIT(pairs_matrix[key_b][byte_position],bit_position)) >0)
-				  				eliminate_a_b = -1; // then, don't remove pair
-			  			}
+				  			GET_BIT_POSITION(bit_position,NUM_BYTES,pair_a_c,byte_position);
+				  			// if pair_a_c is in the list of key_a (if its bit is set)
+				  			if( (READ_BIT(pairs_matrix[key_a][byte_position],bit_position)) >0){
+				  				// pair_b_c also must be in the list of key_b
+				  				GET_BYTE_POSITION(byte_position,NUM_BYTES,pair_b_c);
+					  			GET_BIT_POSITION(bit_position,NUM_BYTES,pair_b_c,byte_position);
+					  			// if pair_b_c is in the list of key_a (if its bit is set)
+					  			if( (READ_BIT(pairs_matrix[key_b][byte_position],bit_position)) >0)
+					  				eliminate_a_b = -1; // then, don't remove pair
+				  			}
 						}
 					}
 
 					if(eliminate_a_b >0){
 						GET_BYTE_POSITION(byte_position,NUM_BYTES,pair);
-		  			GET_BIT_POSITION(bit_position,NUM_BYTES,pair,byte_position);
-		  			// if pair_a_c is in the list of key_a (if its bit is set)
-		  			if( (READ_BIT(pairs_matrix[key][byte_position],bit_position)) >0){
-		  				CLEAR_BIT(pairs_matrix[key][byte_position],bit_position); // remove pair(set bit to zero)
-		  				done = -1;
-		  			}
+			  			GET_BIT_POSITION(bit_position,NUM_BYTES,pair,byte_position);
+			  			// if pair is in the list of key(if its bit is set)
+			  			if( (READ_BIT(pairs_matrix[key][byte_position],bit_position)) >0){
+			  				CLEAR_BIT(pairs_matrix[key][byte_position],bit_position); // remove pair(set bit to zero)
+			  				done = -1;
+
+			  				// if the key does not have any other pair, set it's last bit to zero
+			  				int list_empty = 1;
+			  				for(int i=0; i<NUM_BYTES;i++){
+			  					if(pairs_matrix[key][i]>0){
+			  						list_empty = -1;
+			  						break;
+			  					}
+			  				}
+			  				if(list_empty >0)
+			  					CLEAR_BIT(pairs_matrix[key][NUM_BYTES],0); // set list of Key to empty
+			  			}
 					}
 					eliminate_a_b = 1;
 				}

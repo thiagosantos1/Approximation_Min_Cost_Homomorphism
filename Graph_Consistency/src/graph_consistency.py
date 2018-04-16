@@ -9,7 +9,7 @@ import random
 import sys
 from hash import * # use to create key for each pair in the list_pairs
 import os # to get full directory
-
+ 
 class Vertex:
   def __init__(self, n):
     self.name = n
@@ -438,7 +438,7 @@ print("\t*** List reduction is done ***")
 #graph_g.print_list_G_H()
 
 print("\t*** Making pairs has started ***");
-graph_g.make_pairs(graph_h)
+#graph_g.make_pairs(graph_h)
 print("\t*** Making pairs is done***");
 #graph_g.print_pairs()
 

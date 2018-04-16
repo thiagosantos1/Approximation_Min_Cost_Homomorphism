@@ -164,6 +164,7 @@ endfor
 
 # create first constrants based on min ordering
 # for every vertex left of G 
+# Constraint Xui - Xui+1 >=0
 size_A = size(A);
 for vertex_g=1:length(left_lis_G);
   start = -1;
@@ -173,7 +174,7 @@ for vertex_g=1:length(left_lis_G);
     if start <=0;
       A(size_A(1)+1,[size_A(2)+1])= 1;
       b(end +1) = 1;
-      ctype = cstrcat(ctype,"L");
+      ctype = cstrcat(ctype,"S");
       start = 1;
     else
       A(size_A(1)+1,[size_A(2)+1]) = -1;
@@ -196,7 +197,7 @@ for vertex_g=1:length(right_lis_G);
     if start <=0;
       A(size_A(1)+1,[size_A(2)+1])= 1;
       b(end +1) = 1;
-      ctype = cstrcat(ctype,"L");
+      ctype = cstrcat(ctype,"S");
       start = 1;
     else
       A(size_A(1)+1,[size_A(2)+1]) = -1;

@@ -10,7 +10,7 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	# to save in the octave folder
 	sub_path = "/../../LP_LORA/src/" # to save the file in the LP folder automatic
 	abs_path = os.getcwd()
-	path = abs_path + sub_path + output_name + ".mat"
+	path = abs_path + sub_path + output_name + ".mat" 
 
 	try:
 		list_output = open(output_name+".txt", 'w')

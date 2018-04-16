@@ -6,7 +6,7 @@ import os # to get full directory
 # in the promp, the user defines N, as well the percentage of vertices in the left of graph
 
 def make_rand_bip_graph(num_vertices, num_partition, output_name):
-
+ 
 	# to save in the octave folder
 	sub_path = "/../../LP_LORA/src/" # to save the file in the LP folder automatic
 	abs_path = os.getcwd()
@@ -45,8 +45,12 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 		bi_partition_edges_vertices = partitions[x+1] # to connect with edges
 
 		for vertice in bi_partition_vertices:
-			rand_num_edges = random.randint(1, len(bi_partition_edges_vertices))
+			max_degre = len(bi_partition_edges_vertices)
 			edg_list = []
+			if max_degre > 1:
+				max_degre = max_degre//2
+
+			rand_num_edges = random.randint(1, max_degre)
 
 			while len(edg_list) < rand_num_edges: # untill all edges of vertice has not been choosen, keep addind
 				index = random.randint(0, len(bi_partition_edges_vertices)-1)
