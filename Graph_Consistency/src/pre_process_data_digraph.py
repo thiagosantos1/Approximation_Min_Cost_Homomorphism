@@ -17,7 +17,7 @@ def process_data(graph_g, graph_h):
     print("Failure opening file " + str(graph_g) )
     sys.exit(2)
 
-  num_vertices = int(graph_file.readline())
+  num_vertices_g = int(graph_file.readline())
   graph_g = []
 
   lines = graph_file.readlines()
@@ -30,7 +30,7 @@ def process_data(graph_g, graph_h):
     	graph_g.append(x)
 
     if y not in graph_g:
-    	graph_g.append(y)
+    	graph_g.append(y) 
 
   # for H
   try:
@@ -39,7 +39,7 @@ def process_data(graph_g, graph_h):
     print("Failure opening file " + str(graph_h) )
     sys.exit(2)
 
-  num_vertices = int(graph_file.readline())
+  num_vertices_h = int(graph_file.readline())
   graph_h = []
   
   lines = graph_file.readlines()
@@ -67,22 +67,22 @@ def process_data(graph_g, graph_h):
     print("Failure opening file " + str(graph_h) + " to write")
     sys.exit(2)
 
-  graph_g = sorted(graph_g)
-  graph_h = sorted(graph_h)
+  #graph_g = sorted(graph_g)
+  #graph_h = sorted(graph_h)
 
   # for G & H
   rand_cost = 0
   size_g = 0
   size_h = 0
-  for elem_g in graph_g:
+  for elem_g in range(num_vertices_g):
     size_g +=1
     size_h = 0
-    for elem_h in graph_h:
+    for elem_h in range(num_vertices_h):
       size_h +=1
       rand_cost = random.randint(min_rand, max_rand)
       list_output.write(str(elem_g) + " " + str(elem_h) + " " + str(rand_cost))
 
-      if size_g < len(graph_g):
+      if size_g <= len(graph_g):
         list_output.write("\n")
       elif size_h < len(graph_h):
         list_output.write("\n")

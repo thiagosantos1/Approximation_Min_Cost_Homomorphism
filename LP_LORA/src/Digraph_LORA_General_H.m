@@ -169,7 +169,7 @@ for vertex_g=1:length(vertices_graph_g);
     if start <=0;
       A(size_A(1)+1,[size_A(2)+1])= 1;
       b(end +1) = 1;
-      ctype = cstrcat(ctype,"L");
+      ctype = cstrcat(ctype,"S");
       start = 1;
     else
       A(size_A(1)+1,[size_A(2)+1]) = -1;

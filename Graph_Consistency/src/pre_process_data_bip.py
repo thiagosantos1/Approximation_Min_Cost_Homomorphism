@@ -17,7 +17,7 @@ def process_data(graph_g, graph_h):
     print("Failure opening file " + str(graph_g) )
     sys.exit(2)
 
-  num_vertices = int(graph_file.readline())
+  num_vertices_g = int(graph_file.readline())
   left_g = []
   right_g = []
 
@@ -40,7 +40,7 @@ def process_data(graph_g, graph_h):
     print("Failure opening file " + str(graph_h) )
     sys.exit(2)
 
-  num_vertices = int(graph_file.readline())
+  num_vertices_h = int(graph_file.readline())
   left_h = []
   right_h = []
   
