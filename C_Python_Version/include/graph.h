@@ -50,6 +50,7 @@ typedef struct LPdata {
 	int variable_type;
 	int num_nonzero_constraints;
 
+	int PAIRS_CONST; // parameter set to 1 if LP is gonna be running with pairs list constraint
 	glp_prob *mip;
 
 } LP_MIN_COST;

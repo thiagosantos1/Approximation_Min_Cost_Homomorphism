@@ -1,5 +1,7 @@
 #include <graph.h> 
 
+//#define PAIRS_CONSTRAINT
+
 int main(int argc, char const *argv[])
 {
 	USER_PARAMS userpar;
@@ -17,10 +19,18 @@ int main(int argc, char const *argv[])
 	userpar.list_homom = strdup(argv[4]);
 	userpar.list_pairs = strdup(argv[5]);
 
+	lp.PAIRS_CONST = 0; // set to false
+
 	makegraph(&graph, &userpar);
-	//pair_consistency(&graph, &userpar);
+
+	#ifdef PAIRS_CONSTRAINT
+		pair_consistency(&graph, &userpar);
+		lp.PAIRS_CONST = 1; // set to true
+	#endif
+	
 	LP_SOLVER(&graph, &lp);
+	
 	return 0;
 }
-
-//gcc main.c makegraph.c pair_consistency.c LP_Min_Cost.c -lglpk -o ../etc/main -I../include/
+// gcc main.c makegraph.c pair_consistency.c LP_Min_Cost.c -lglpk -o ../etc/main -I../include/
+// time ./main graph_g.txt graph_h.txt list_cost.txt list_homom.txt list_pairs.txt > continuos.txt

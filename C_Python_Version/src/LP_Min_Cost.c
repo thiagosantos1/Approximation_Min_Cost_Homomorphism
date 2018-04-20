@@ -2,6 +2,8 @@
 
 #define PRINT_RESULTS
 
+//#define OPTIMAL_SOLUTION
+
 void initi_LP(GRAPH *op, LP_MIN_COST * lp);
 // function to check if more memory is needed
 void reallocate_memory_check(LP_MIN_COST * lp); 
@@ -33,6 +35,15 @@ to any Diagraph H.
 for more details, please check the formulas at the paper, page 7
 */
 void constr_missing_edges(GRAPH *op, LP_MIN_COST * lp);
+
+
+/* Constraint based on pair consistency 
+	Xui - Xu,i+1 <= Sum(Xvj - Xv,j+1) --> For all u,v in G | (i,j) in L(u,v)
+	L(u,v) = { (i,j), (i,j+1)....}
+	Thus --> Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
+	L(u,v) = { (i,j), (i,j+1)....}
+*/
+void constr_pairs_list(GRAPH *op, LP_MIN_COST * lp);
 
 void construct_LP(GRAPH *op, LP_MIN_COST * lp);
 
@@ -86,6 +97,9 @@ void construct_LP(GRAPH *op, LP_MIN_COST * lp)
 	constr_out_neighbor(op,lp);
 	constr_missing_edges(op,lp);
 
+	if(lp->PAIRS_CONST ==1) // if pairs_constraint is set to true
+		constr_pairs_list(op,lp);
+
 }
 
 void initi_LP(GRAPH *op, LP_MIN_COST * lp)
@@ -99,7 +113,12 @@ void initi_LP(GRAPH *op, LP_MIN_COST * lp)
 	lp->memory_left			= 	 0;
 	lp->num_constraints =    0;
 
-	lp->variable_type = GLP_CV;
+	#ifdef OPTIMAL_SOLUTION
+		lp->variable_type = GLP_IV;
+	#else
+		lp->variable_type = GLP_CV;
+	#endif
+
 	lp->num_nonzero_constraints = 0;
 
 	// alocate for the firs time memory for the arrays that construct the LP
@@ -509,4 +528,10 @@ void constr_missing_edges(GRAPH *op, LP_MIN_COST * lp)
 			}
 		}
 	}
+}
+
+void constr_pairs_list(GRAPH *op, LP_MIN_COST * lp)
+{
+
+	
 }
