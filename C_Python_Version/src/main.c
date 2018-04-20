@@ -18,9 +18,8 @@ int main(int argc, char const *argv[])
 	userpar.list_pairs = strdup(argv[5]);
 
 	makegraph(&graph, &userpar);
-	pair_consistency(&graph, &userpar);
-	construct_LP(&graph, &lp);
-
+	//pair_consistency(&graph, &userpar);
+	LP_SOLVER(&graph, &lp);
 	return 0;
 }
 

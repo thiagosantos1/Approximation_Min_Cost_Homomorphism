@@ -17,6 +17,8 @@
 #define GET_BIT_POSITION(bit_position,size_h,pair_hash,byte_position) bit_position = pair_hash - ( ((size_h - byte_position -1)*8) )
 #define KEY_HASH(KEY,X,Y,N) KEY = (X*N)+Y;
 
+// return the index of pair U,V in the constraint --> pairs starting at 0,0
+#define INDEX_CONSTRAINT_G_H(U,V,NUM_G,NUM_H) ( ((U) * NUM_H) + V+1) 
 
 typedef 
 	unsigned char
@@ -39,15 +41,16 @@ typedef struct graphdata {
 } GRAPH;
 
 typedef struct LPdata {
-	int ** index_saving_matrix;
 	int *ia; // save the index i of the constraint matrix
 	int *ja; // save the index j of the constraint matrix
 	double *ar; // save the value/coeficient of the constraing at [i,j]
 	int num_constraints;
-	glp_prob *mip;
-
 	int allocation_size; // size to realocate memory
+	int memory_left; // keep track if we still have space in ia,ja & ar
 	int variable_type;
+	int num_nonzero_constraints;
+
+	glp_prob *mip;
 
 } LP_MIN_COST;
 
@@ -63,4 +66,4 @@ typedef struct userdata {
 
 void makegraph(GRAPH *op, USER_PARAMS *ip);
 void pair_consistency(GRAPH *op, USER_PARAMS * ip);
-void construct_LP(GRAPH *op, LP_MIN_COST * lp);
+void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp);

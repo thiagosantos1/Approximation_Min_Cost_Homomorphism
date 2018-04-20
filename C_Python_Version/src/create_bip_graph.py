@@ -46,7 +46,7 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 			max_degre = len(bi_partition_edges_vertices)
 			edg_list = []
 			if max_degre > 1:
-				max_degre = max_degre//2
+				max_degre = max_degre#//2
 
 			rand_num_edges = random.randint(1, max_degre)
 

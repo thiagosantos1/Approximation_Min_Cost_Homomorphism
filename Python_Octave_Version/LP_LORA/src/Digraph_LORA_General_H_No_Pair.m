@@ -117,6 +117,7 @@ endwhile
 # base on the adj_matrix_cost_g_h we can build c
 size_adj = size(adj_matrix_cost_g_h);
 
+# obj function
 # for every vertex in G 
 for vertex_g=1:size_adj(1);
   start = -1;
