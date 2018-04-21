@@ -37,6 +37,7 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	last = partitions[last_index][len(partitions[last_index])-1]
 	partitions[last_index+1] = [y for y in range(last+1,num_vertices)]
 	list_output.write(str(num_vertices) + "\n") 
+	print("partition: ",partitions)
 	for x in range(0, len(partitions) -1):
 		bi_partition_vertices = []
 		bi_partition_vertices.extend(partitions[x]) # vertices
@@ -46,6 +47,7 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 			bi_partition_edges_vertices.extend(partitions[x+2]) 
 
 		for vertice in bi_partition_vertices:
+			print(x,len(bi_partition_edges_vertices))
 			rand_num_edges = random.randint(1, len(bi_partition_edges_vertices))
 			edg_list = []
 

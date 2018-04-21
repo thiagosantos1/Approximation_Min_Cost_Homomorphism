@@ -1,3 +1,7 @@
+/* Author: Thiago Santos. --> https://github.com/thiagosantos1/
+   Copyright (C)
+*/
+
 #include <graph.h> 
 
 void init_list_homom(GRAPH *op, char * file_name);

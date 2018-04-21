@@ -1,3 +1,19 @@
+/* Author: Thiago Santos. --> https://github.com/thiagosantos1/  */
+
+/***************************************************************************
+* This class is designed to have all the information needed for other 
+* classes that uses any information about the graph, as well about the LP
+* 
+* The User(main) has visibility to only the methods included here. 
+*
+* The Idea of this implementation is to get a homomophis between 2 graphs
+* with the minimum cost as possible. In order to do that, we have to be sure 
+* to consider few constraints, such as Min-Max ordering and others.
+*
+* Copyright (C)
+*
+****************************************************************************/
+
 #include <stdio.h>  
 #include <stdlib.h>
 #include <string.h> 
@@ -65,6 +81,11 @@ typedef struct userdata {
 
 } USER_PARAMS;
 
+/* Make graph in the class makegraph.c by reading all the files set by the user in user params*/
 void makegraph(GRAPH *op, USER_PARAMS *ip);
+
+/* run pair consistency, in the class pair_consistency.c*/
 void pair_consistency(GRAPH *op, USER_PARAMS * ip);
+
+/* Create and solve the LP desired, in the class LP_Min_Cost.c */
 void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp);

@@ -434,10 +434,10 @@ print("\t*** Making pairs is done***");
 #graph_g.print_pairs()
 
 
-print("\t*** Pair consistency has started ***")
+#print("\t*** Pair consistency has started ***")
 #graph_g.pair_consistency(graph_h)
 
-print("\t*** Pair List & Pair Consistency Done ***")
+#print("\t*** Pair List & Pair Consistency Done ***")
 #graph_g.print_pairs()
 
 #graph_g.check_homomophism(graph_h)

@@ -1,57 +1,13 @@
 #include <graph.h> 
+#include <LP_Min_Cost.h>
 
 #define PRINT_RESULTS
 
 //#define OPTIMAL_SOLUTION
 
-void initi_LP(GRAPH *op, LP_MIN_COST * lp);
-// function to check if more memory is needed
-void reallocate_memory_check(LP_MIN_COST * lp); 
-
-// functions to get first in_out neighbor of a vertex in H
-int get_first_in_neighbor(GRAPH *op, int vertex, int begi_, int end_); 
-int get_first_out_neighbor(GRAPH *op, int vertex, int begi_, int end_);
-
-void set_obj_function(GRAPH *op, LP_MIN_COST * lp);
-
-// add constraint to lp, based on ai & aj indexes, and the coeficiente value of the variable
-void add_constraint(LP_MIN_COST * lp, int ai_value, int aj_value, double ar_coef_value);
-//for every vertex in G Constraint Xui - Xui+1 >=0
-void constr_XUi_XUiplus1(GRAPH *op, LP_MIN_COST * lp);
-
-// constraints based if i is available for Xu or Xv
-void constr_list_Xui_Xuiplus1(GRAPH *op, LP_MIN_COST * lp);
-
-// for each vertex in G, you check agains all vertex in H if there is an edge, and vice-versa
-// and for each pair, we check against all vertex in G again, if there's an edge
-// Then, Xv_innbr -Xuj >=0
-void constr_in_neighbor(GRAPH *op, LP_MIN_COST * lp);
-// Then, Xv_outnbr -Xuj >=0
-void constr_out_neighbor(GRAPH *op, LP_MIN_COST * lp);
-
-/*
-add constraint for missing edges(From Mix_Max ordering)
-to any Diagraph H.
-for more details, please check the formulas at the paper, page 7
-*/
-void constr_missing_edges(GRAPH *op, LP_MIN_COST * lp);
-
-
-/* Constraint based on pair consistency 
-	Xui - Xu,i+1 <= Sum(Xvj - Xv,j+1) --> For all u,v in G | (i,j) in L(u,v)
-	L(u,v) = { (i,j), (i,j+1)....}
-	Thus --> Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
-	L(u,v) = { (i,j), (i,j+1)....}
-*/
-void constr_pairs_list(GRAPH *op, LP_MIN_COST * lp);
-
-void construct_LP(GRAPH *op, LP_MIN_COST * lp);
-
 void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp)
 {
 	construct_LP(op,lp);
-	// for(int i=0; i<=lp->num_nonzero_constraints; i++)
-	// 	printf("ai: %d, aj: %d, ar: %0.f\n",lp->ia[i],lp->ja[i],lp->ar[i] );
 
 	glp_load_matrix(lp->mip, lp->num_nonzero_constraints, lp->ia, lp->ja, lp->ar);
 
@@ -60,28 +16,8 @@ void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp)
 	parm.presolve = GLP_ON;
 	int err = glp_intopt(lp->mip, &parm);
 
-	double total_cost = glp_mip_obj_val(lp->mip);
-	printf("Total Cost of Cut %.2f\n",total_cost );
-
 	#ifdef PRINT_RESULTS 
-
-		int count=0,i=0,g;
-		printf("     ");
-		for(i; i<op->num_vert_H;i++)
-			printf("H %d  ",i);
-		i=0;
-		printf("\nG %d: ",i );
-		for(i; i<op->num_vert_G * op->num_vert_H;i++){
-			printf("%.02f ", glp_mip_col_val(lp->mip, i+1)); 
-			count++;
-			if(count == op->num_vert_H){
-				printf("\n");
-				g = (i/op->num_vert_H)+1;
-				if(g < op->num_vert_G)
-					printf("G %d: ",g);
-				count =0;
-			}
-		}
+		print_results(op,lp);
 	#endif
 
 	glp_delete_prob(lp->mip);
@@ -532,6 +468,116 @@ void constr_missing_edges(GRAPH *op, LP_MIN_COST * lp)
 
 void constr_pairs_list(GRAPH *op, LP_MIN_COST * lp)
 {
+	int g_u, g_v, h_i, h_i_, i_is_in_gu =-1, h_j, h_j_;
+	int key=0,pair,byte_position=0,bit_position=0,index_colum_G_H=0;
 
-	
+	//for every vertex in G 
+	for(g_u=0; g_u<op->num_vert_G; g_u++){
+
+		// check for it's possible assigns in H
+		for(h_i=0; h_i<op->num_vert_H; h_i++){
+			h_i_ = -1;
+			if(h_i < op->num_vert_H -1) // if it's not the last one, then set the next one
+				h_i_ = h_i +1;
+
+			i_is_in_gu = op->list_homom_matrix[g_u][h_i] == 1 ? 1:-1;
+
+			//check if i is in the list of U first. Then, add the constraint
+			if (i_is_in_gu == 1){ 
+
+				// add new constraint
+				lp->num_constraints +=1;
+				glp_add_rows(lp->mip, 1); // add new rows for a new costraint
+				glp_set_row_name(lp->mip, lp->num_constraints, "c1");
+				glp_set_row_bnds(lp->mip, lp->num_constraints, GLP_LO, 0.0, 0.0);
+
+				// for u # for last one, just add -1
+				if(h_i < op->num_vert_H -1){ // not last one
+					// Xui = -1(coeficiente)
+					index_colum_G_H = INDEX_CONSTRAINT_G_H(g_u,h_i,op->num_vert_G, op->num_vert_H); 
+					add_constraint(lp, lp->num_constraints, index_colum_G_H,-1);
+
+					// Xui +1 = 1(coeficiente)
+					index_colum_G_H = INDEX_CONSTRAINT_G_H(g_u,h_i_,op->num_vert_G, op->num_vert_H); 
+					add_constraint(lp, lp->num_constraints, index_colum_G_H, 1);
+
+				}else{ // last one
+					// Xui = -1(coeficiente)
+					index_colum_G_H = INDEX_CONSTRAINT_G_H(g_u,h_i,op->num_vert_G, op->num_vert_H); 
+					add_constraint(lp, lp->num_constraints, index_colum_G_H,-1);
+				}
+
+				// 									SUM PART
+				// now, for all ui & ui+1, construct the constraint for all vj & vj+1
+				//Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
+        //get if (h_i,h_j) is in the list(g_u,g_v)
+				for(g_v=0; g_v<op->num_vert_G; g_v++){
+					if(g_u != g_v){ // if they are not the same
+
+						// new line of constraint for every ui,u+1 v # Sum part
+						h_j_ = -1;
+						for(h_j=0; h_j<op->num_vert_H; h_j++){
+							if(h_j < op->num_vert_H -1) 
+								h_j_ = h_j +1;
+
+							// Sum(Xvj - Xv,j+1) - Xui + Xu,i+1 >=0
+              // get if (h_i,h_j) is in the list(g_u,g_v)
+              KEY_HASH(key,g_u,g_v,op->num_vert_G);
+              if( op->pairs_matrix[key][op->num_bytes ] <=0 ){
+              	fprintf(stderr, "Error pairs list. key %d doesn't have any pair", key);
+              	exit(1);
+              }
+
+              // get the key that represents the pair we are looking for it
+              KEY_HASH(pair,h_i,h_j,op->num_vert_H);
+              // get the byte and bit of the pair
+							GET_BYTE_POSITION(byte_position,op->num_bytes ,pair);
+				  		GET_BIT_POSITION(bit_position,op->num_bytes ,pair,byte_position);
+
+				  		// if pair is in the list of key (if its bit is set)
+				  		if( (READ_BIT(op->pairs_matrix[key][byte_position],bit_position)) >0){
+
+				  			// Xvj = 1(coeficiente)
+								index_colum_G_H = INDEX_CONSTRAINT_G_H(g_v,h_j,op->num_vert_G, op->num_vert_H); 
+								if(index_colum_G_H != lp->ja[lp->num_nonzero_constraints ])
+									add_constraint(lp, lp->num_constraints, index_colum_G_H, 1);
+
+								if(h_j < op->num_vert_H -1){ // if there is a next one
+									// Xvj_ = 1(coeficiente)
+									index_colum_G_H = INDEX_CONSTRAINT_G_H(g_v,h_j_,op->num_vert_G, op->num_vert_H);
+									if(index_colum_G_H != lp->ja[lp->num_nonzero_constraints ]) 
+										add_constraint(lp, lp->num_constraints, index_colum_G_H, -1);
+								}
+				  		}
+						}
+					}
+
+				}
+			}
+
+		}
+	}
+}
+
+void print_results(GRAPH *op, LP_MIN_COST * lp)
+{
+	double total_cost = glp_mip_obj_val(lp->mip);
+	printf("Total Cost of Cut %.2f\n",total_cost );
+	int count=0,i=0,g;
+	printf("     ");
+	for(i; i<op->num_vert_H;i++)
+		printf("H %d  ",i);
+	i=0;
+	printf("\nG %d: ",i );
+	for(i; i<op->num_vert_G * op->num_vert_H;i++){
+		printf("%.02f ", glp_mip_col_val(lp->mip, i+1)); 
+		count++;
+		if(count == op->num_vert_H){
+			printf("\n");
+			g = (i/op->num_vert_H)+1;
+			if(g < op->num_vert_G)
+				printf("G %d: ",g);
+			count =0;
+		}
+	}
 }

@@ -423,7 +423,7 @@ for g_u = vertices_graph_g;
               endif
             endfor  
            
-              # for u # for last one, just add 1
+              # for u # for last one, just add -1
              if range < length(vertices_graph_h);
               A(size_A(1)+1,[adj_matrix_index_saving(g_u,[h_i])]) = -1;
               A(size_A(1)+1,[adj_matrix_index_saving(g_u,[h_i_])]) = 1;

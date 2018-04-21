@@ -81,7 +81,7 @@ int pair_reduction(GRAPH *op, USER_PARAMS * ip, int num_vert_G,int num_vert_H, i
 					}
 
 					if(eliminate_a_b >0){
-						GET_BYTE_POSITION(byte_position,op->num_bytes ,pair);
+							GET_BYTE_POSITION(byte_position,op->num_bytes ,pair);
 			  			GET_BIT_POSITION(bit_position,op->num_bytes ,pair,byte_position);
 			  			// if pair is in the list of key(if its bit is set)
 			  			if( (READ_BIT(op->pairs_matrix[key][byte_position],bit_position)) >0){
