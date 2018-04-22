@@ -14,7 +14,7 @@ void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp)
 	glp_iocp parm;
 	glp_init_iocp(&parm);
 	parm.presolve = GLP_ON;
-	int err = glp_intopt(lp->mip, &parm);
+	glp_intopt(lp->mip, &parm);
 
 	#ifdef PRINT_RESULTS 
 		print_results(op,lp);
@@ -40,7 +40,6 @@ void construct_LP(GRAPH *op, LP_MIN_COST * lp)
 
 void initi_LP(GRAPH *op, LP_MIN_COST * lp)
 {
-	int i;
 	lp->mip = glp_create_prob();
 	glp_set_prob_name(lp->mip, "Min Cost Homomophism");
 	glp_set_obj_dir(lp->mip, GLP_MIN);
@@ -565,11 +564,11 @@ void print_results(GRAPH *op, LP_MIN_COST * lp)
 	printf("Total Cost of Cut %.2f\n",total_cost );
 	int count=0,i=0,g;
 	printf("     ");
-	for(i; i<op->num_vert_H;i++)
+	for(i=i; i<op->num_vert_H;i++)
 		printf("H %d  ",i);
 	i=0;
 	printf("\nG %d: ",i );
-	for(i; i<op->num_vert_G * op->num_vert_H;i++){
+	for(i=i; i<op->num_vert_G * op->num_vert_H;i++){
 		printf("%.02f ", glp_mip_col_val(lp->mip, i+1)); 
 		count++;
 		if(count == op->num_vert_H){

@@ -3,14 +3,7 @@
 */
 
 #include <graph.h> 
-
-void init_list_homom(GRAPH *op, char * file_name);
-void init_pairs(GRAPH *op, char * file_name);
-void init_graph_g(GRAPH *op, char * file_name);
-void init_graph_h(GRAPH *op, char * file_name);
-void init_cost_g_h(GRAPH *op, char * file_name);
-
-void print_matrix(uchar ** matrix, int rowns, int columns);
+#include <makegraph.h>
 
 void makegraph(GRAPH *op, USER_PARAMS * ip)
 {
