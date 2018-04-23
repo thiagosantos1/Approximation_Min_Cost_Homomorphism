@@ -28,7 +28,10 @@ We show another importance of this class of digraphs by designing a constant ap-
 
 5) Run the program
 	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
-		* make run
+		* If running for continuos solution(Default)
+			* make run > ../etc/continuos.txt (To save at a file)
+		* If running for optimal(integral) solution
+			* make run > ../etc/optimal.txt (To save at a file)
 
 ## Contributors
 
