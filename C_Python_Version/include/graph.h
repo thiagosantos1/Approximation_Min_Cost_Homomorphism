@@ -18,8 +18,6 @@
 #include <stdlib.h>
 #include <string.h> 
 #include <glpk.h>
-
-
 //Set bit y (0-indexed) of x to '1' by generating a a mask with a '1' in the proper bit location and ORing x with the mask.
 #define SET_BIT(X,Y) X |= (1 << Y)
 
@@ -56,21 +54,6 @@ typedef struct graphdata {
 
 } GRAPH;
 
-typedef struct LPdata {
-	int *ia; // save the index i of the constraint matrix
-	int *ja; // save the index j of the constraint matrix
-	double *ar; // save the value/coeficient of the constraing at [i,j]
-	int num_constraints;
-	int allocation_size; // size to realocate memory
-	int memory_left; // keep track if we still have space in ia,ja & ar
-	int variable_type;
-	int num_nonzero_constraints;
-
-	int PAIRS_CONST; // parameter set to 1 if LP is gonna be running with pairs list constraint
-	glp_prob *mip;
-
-} LP_MIN_COST;
-
 typedef struct userdata {
   char *graph_g;  // Graph G file name
   char *graph_h;
@@ -81,6 +64,33 @@ typedef struct userdata {
 
 } USER_PARAMS;
 
+
+typedef struct LPdata {
+	int *ia; // save the index i of the constraint matrix
+	int *ja; // save the index j of the constraint matrix
+	double *ar; // save the value/coeficient of the constraing at [i,j]
+	int num_constraints;
+	int allocation_size; // size to realocate memory
+	int memory_left; // keep track if we still have space in ia,ja & ar
+	int variable_type;
+	int num_nonzero_constraints;
+
+	glp_prob *mip;
+
+} LP_MIN_COST;
+
+typedef struct LPparam {
+	/* 1 to continuos(default) 
+	   2 to integral  - Optimal*/
+	int type_solution; 
+
+	/* 1(default) to run program with pair consistency
+	   2 to run without it. */
+	int pair_consistency;
+
+} LP_user_params;
+
+
 /* Make graph in the class makegraph.c by reading all the files set by the user in user params*/
 void makegraph(GRAPH *op, USER_PARAMS *ip);
 
@@ -88,4 +98,10 @@ void makegraph(GRAPH *op, USER_PARAMS *ip);
 void pair_consistency(GRAPH *op, USER_PARAMS * ip);
 
 /* Create and solve the LP desired, in the class LP_Min_Cost.c */
-void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp);
+void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param);
+
+/* Set the default configuration to LP in the class LP_Min_Cost.c */
+void defult_configurations(LP_user_params * lp_param);
+
+/* Set configuration of LP, based on LP_user_params in the class LP_Min_Cost.c */
+void set_LP_configuration(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param,USER_PARAMS * ip);

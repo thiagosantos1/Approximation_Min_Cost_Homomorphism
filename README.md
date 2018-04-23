@@ -10,8 +10,8 @@ We show another importance of this class of digraphs by designing a constant ap-
 
 1) Wanna change paramters of LP, such as, optimal or continuos solution?
 	* Go to folder src (Research_Graph_Homomorphism/C_Python_Version/src) and open file main.c
-		* Inside of main, you can change any parameter of the data structe LP_params you like, to the options given.
-		* To check all available paramters and options, go to folder include (Research_Graph_Homomorphism/C_Python_Version/include) and open file LP_Min_Cost.h
+		* Inside of main, you can change any parameter of the data structe LP_user_params you like, to the options given.
+		* To check all available paramters and options, go to folder include (Research_Graph_Homomorphism/C_Python_Version/include) and open file graph.h
 
 2) Compile the program
 	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:

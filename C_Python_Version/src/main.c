@@ -10,35 +10,35 @@
 
 #include <graph.h> 
 
-#define PAIRS_CONSTRAINT
-
 int main(int argc, char const *argv[])
 {
 	USER_PARAMS userpar;
   GRAPH graph;
   LP_MIN_COST lp;
+  LP_user_params LP_user_param;
+  defult_configurations(&LP_user_param); // set all default configurations to LP
 
   if(argc <6){
 		fprintf(stderr, "Usage <Graph G>, <Graph H>, <List Cost>, <List Homom> & <Pair List>\n");
 		exit(1);
 	}
 
+	/* User graphs paramters */
 	userpar.graph_g = strdup(argv[1]);
 	userpar.graph_h = strdup(argv[2]);
 	userpar.list_cost = strdup(argv[3]);
 	userpar.list_homom = strdup(argv[4]);
 	userpar.list_pairs = strdup(argv[5]);
 
-	lp.PAIRS_CONST = 0; // set to false
+	/* User LP paramters */
+	LP_user_param.pair_consistency = 2; // 1 to true & 2 to false
+	LP_user_param.type_solution		 = 1; // 1 to continuos & 2 to integral
 
 	makegraph(&graph, &userpar);
-
-	#ifdef PAIRS_CONSTRAINT
-		pair_consistency(&graph, &userpar);
-		lp.PAIRS_CONST = 1; // set to true
-	#endif
 	
-	LP_SOLVER(&graph, &lp);
+	set_LP_configuration(&graph,&lp,&LP_user_param,&userpar);
+
+	LP_SOLVER(&graph, &lp,&LP_user_param);
 	
 	return 0;
 }

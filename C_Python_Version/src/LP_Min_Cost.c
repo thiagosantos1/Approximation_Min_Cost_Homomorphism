@@ -3,11 +3,27 @@
 
 #define PRINT_RESULTS
 
-//#define OPTIMAL_SOLUTION
-
-void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp)
+void defult_configurations(LP_user_params * lp_param)
 {
-	construct_LP(op,lp);
+	lp_param->type_solution = 	1; 
+	lp_param->pair_consistency = 1;
+
+}
+
+void set_LP_configuration(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param,USER_PARAMS * ip)
+{
+	if(lp_param->type_solution == 2)
+		lp->variable_type = GLP_IV;
+	else
+		lp->variable_type = GLP_CV;
+
+	if(lp_param->pair_consistency == 1)
+		pair_consistency(op, ip);
+}
+
+void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param)
+{
+	construct_LP(op,lp,lp_param);
 
 	glp_load_matrix(lp->mip, lp->num_nonzero_constraints, lp->ia, lp->ja, lp->ar);
 
@@ -23,7 +39,7 @@ void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp)
 	glp_delete_prob(lp->mip);
 }
 
-void construct_LP(GRAPH *op, LP_MIN_COST * lp)
+void construct_LP(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param)
 {
 	initi_LP(op,lp);
 	set_obj_function(op,lp);
@@ -33,7 +49,7 @@ void construct_LP(GRAPH *op, LP_MIN_COST * lp)
 	constr_out_neighbor(op,lp);
 	constr_missing_edges(op,lp);
 
-	if(lp->PAIRS_CONST ==1) // if pairs_constraint is set to true
+	if(lp_param->pair_consistency ==1) // if pairs_constraint is set to true
 		constr_pairs_list(op,lp);
 
 }
@@ -47,12 +63,6 @@ void initi_LP(GRAPH *op, LP_MIN_COST * lp)
 	lp->allocation_size = 1000;
 	lp->memory_left			= 	 0;
 	lp->num_constraints =    0;
-
-	#ifdef OPTIMAL_SOLUTION
-		lp->variable_type = GLP_IV;
-	#else
-		lp->variable_type = GLP_CV;
-	#endif
 
 	lp->num_nonzero_constraints = 0;
 
@@ -561,21 +571,21 @@ void constr_pairs_list(GRAPH *op, LP_MIN_COST * lp)
 void print_results(GRAPH *op, LP_MIN_COST * lp)
 {
 	double total_cost = glp_mip_obj_val(lp->mip);
-	printf("Total Cost of Cut %.2f\n",total_cost );
+	fprintf(stderr,"Total Cost of Cut %.2f\n",total_cost );
 	int count=0,i=0,g;
-	printf("     ");
+	fprintf(stderr,"     ");
 	for(i=i; i<op->num_vert_H;i++)
-		printf("H %d  ",i);
+		fprintf(stderr,"H %d  ",i);
 	i=0;
-	printf("\nG %d: ",i );
+	fprintf(stderr,"\nG %d: ",i );
 	for(i=i; i<op->num_vert_G * op->num_vert_H;i++){
-		printf("%.02f ", glp_mip_col_val(lp->mip, i+1)); 
+		fprintf(stderr,"%.02f ", glp_mip_col_val(lp->mip, i+1)); 
 		count++;
 		if(count == op->num_vert_H){
-			printf("\n");
+			fprintf(stderr,"\n");
 			g = (i/op->num_vert_H)+1;
 			if(g < op->num_vert_G)
-				printf("G %d: ",g);
+				fprintf(stderr,"G %d: ",g);
 			count =0;
 		}
 	}

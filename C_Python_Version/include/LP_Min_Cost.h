@@ -12,6 +12,7 @@
 *
 ****************************************************************************/
 
+
 /* function to initialize LP, with the desired paramters and consigurations */
 void initi_LP(GRAPH *op, LP_MIN_COST * lp);
 
@@ -64,7 +65,7 @@ void constr_pairs_list(GRAPH *op, LP_MIN_COST * lp);
 
 /* Construct the LP, by calling all needed functions, such as the set_obj_function 
    and all constraints needed for the LP */
-void construct_LP(GRAPH *op, LP_MIN_COST * lp);
+void construct_LP(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param);
 
 /* Print results from solution found by LP*/
 void print_results(GRAPH *op, LP_MIN_COST * lp);
