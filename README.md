@@ -21,7 +21,7 @@ We show another importance of this class of digraphs by designing a constant ap-
 		* For a graph G: python3 create_bip_graph.py <num_vertices>, <num_of_partition(>=2)> & <graph_g>
 		* For a graph H: python3 create_bip_graph_h.py <num_vertices>, <num_of_partition(>=2)> & <graph_h>
 
-4) Have you created or added a new graph(G &/or H)? 
+4) Have you created or added a new graph(G &/or H)? If yes, do the following:
 	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* make data
 		* make list
