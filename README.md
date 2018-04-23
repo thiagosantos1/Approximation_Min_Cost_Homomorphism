@@ -8,26 +8,26 @@ We show another importance of this class of digraphs by designing a constant ap-
 
 ## How to setup and run the code
 
-1) Wanna change paramters, such as, optimal or continuos?
-	* Go to folder src(Research_Graph_Homomorphism/C_Python_Version/src) at open file main.c
+1) Wanna change paramters of LP, such as, optimal or continuos solution?
+	* Go to folder src (Research_Graph_Homomorphism/C_Python_Version/src) and open file main.c
 		* Inside of main, you can change any parameter of the data structe LP_params you like, to the options given.
-		* To check all available paramters and options, go to folder include(Research_Graph_Homomorphism/C_Python_Version/include) and open file LP_Min_Cost.h
+		* To check all available paramters and options, go to folder include (Research_Graph_Homomorphism/C_Python_Version/include) and open file LP_Min_Cost.h
 
 2) Compile the program
-	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* make
 3) Want to create new graphs(G &/or H) ? 
-	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* For a graph G: python3 create_bip_graph.py <num_vertices>, <num_of_partition(>=2)> & <output_name>
 		* For a graph H: python3 create_bip_graph_h.py <num_vertices>, <num_of_partition(>=2)> & <output_name>
 
 4) Have you created or added a new graph(G &/or H)? 
-	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* make data
 		* make list
 
 5) Run the program
-	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* make run
 
 ## Contributors
