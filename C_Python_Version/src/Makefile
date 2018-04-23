@@ -22,5 +22,11 @@ LP_Min_Cost.o: LP_Min_Cost.c $(HDR1)
 clean:
 	rm -f *.o ../bin/
 
+data: data
+	python3 pre_process_data_digraph.py ../etc/graph_g.txt ../etc/graph_h.txt
+
+list: list
+	python3 graph_consistency.py ../etc/graph_g.txt ../etc/graph_h.txt ../etc/full_list.txt 2
+
 run: run
 	../bin/./LP_run ../etc/graph_g.txt ../etc/graph_h.txt ../etc/list_cost.txt ../etc/list_homom.txt ../etc/list_pairs.txt

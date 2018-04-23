@@ -1,14 +1,38 @@
-# LORA( Level of repair analysis and minimum cost homomorphisms of graphs) 
+# Bi-Arc Digraphs and Approximation of H-coloring
 
-Research lead by Dr. Arash, about Homomorphism Problems in Digraphs. 
-The present project aims to verify in detail each approach to distill the most elegant proof and most efficient algorithms to solve Homomorphism Problems in polynomial time.
+We study the class of digraphs analogous to complement of circular arc bigraphs. They are defined via a geometric representation by two families of arcs from a circle satisfying  the  condition  of  complement  of  circular  arc  graphs  with  clique  cover  two (circular arc bigraphs); hence we call them
+Bi-arc digraph. </br>
+This digraphs introduced recently by Hell and Rafiey.  They admit a number of equivalent definitions, including an ordering characterization by so-called min-orderings and the existence of semi-lattice polymorphisms.  Min-orderings arose in the study of list  homomorphism  problems. If H admits  a  min-ordering  (or  a  certain  extension
+of  min-orderings),  then  the  list  homomorphism  problem  to H is  known  to  admit  a polynomial time algorithm.The bi-arc digraphs contain the class of monotone proper- interval bigraphs the digraphs that admit a min-max ordering.If a digraph H admits a min-max (and extended min-max) ordering then minimum cost homomorphism to H, MinHOM(H), is polynomial time solvable and NP-complete otherwise.</br>
+We show another importance of this class of digraphs by designing a constant ap- proximation algorithm for minimum cost homomorphism.  When H is a target digraphs and admits a min-ordering then MinHOM(H), can be approximated within a constant factor.
 
-The ideal of the project is to design an algorithm using Linear Programming to achieve a solution in polynomial time for LORA( Level of repair analysis and minimum cost homomorphisms of graphs)
+## How to setup and run the code
+
+1) Wanna change paramters, such as, optimal or continuos?
+	* Go to folder src(Research_Graph_Homomorphism/C_Python_Version/src) at open file main.c
+		* Inside of main, you can change any parameter of the data structe LP_params you like, to the options given.
+		* To check all available paramters and options, go to folder include(Research_Graph_Homomorphism/C_Python_Version/include) and open file LP_Min_Cost.h
+
+2) Compile the program
+	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+		* make
+3) Want to create new graphs(G &/or H) ? 
+	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+		* For a graph G: python3 create_bip_graph.py <num_vertices>, <num_of_partition(>=2)> & <output_name>
+		* For a graph H: python3 create_bip_graph_h.py <num_vertices>, <num_of_partition(>=2)> & <output_name>
+
+4) Have you created or added a new graph(G &/or H)? 
+	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+		* make data
+		* make list
+
+5) Run the program
+	* Inside of folder src(Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
+		* make run
 
 ## Contributors
 
 Dr. Arash Rafiey
 
-Dr. Jeff Kinne
-
 M.Sc. Thiago Santos
+
