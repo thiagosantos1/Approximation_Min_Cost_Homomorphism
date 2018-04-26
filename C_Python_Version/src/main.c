@@ -21,6 +21,17 @@ int main(int argc, char const *argv[])
   if(argc <6){
 		fprintf(stderr, "Usage <Graph G>, <Graph H>, <List Cost>, <List Homom> & <Pair List>\n");
 		exit(1);
+		
+	}else if( argc ==8){
+
+		/* User LP paramters  --> set by argv */
+		LP_user_param.pair_consistency = atoi(argv[6]); // 1 to true & 2 to false
+		LP_user_param.type_solution		 = atoi(argv[7]); // 1 to continuos & 2 to integral
+	}else{
+
+		/* User LP paramters  --> if not set by argv */
+		LP_user_param.pair_consistency = 2; // 1 to true & 2 to false
+		LP_user_param.type_solution		 = 1; // 1 to continuos & 2 to integral
 	}
 
 	/* User graphs paramters */
@@ -29,16 +40,13 @@ int main(int argc, char const *argv[])
 	userpar.list_cost = strdup(argv[3]);
 	userpar.list_homom = strdup(argv[4]);
 	userpar.list_pairs = strdup(argv[5]);
-
-	/* User LP paramters */
-	LP_user_param.pair_consistency = 2; // 1 to true & 2 to false
-	LP_user_param.type_solution		 = 1; // 1 to continuos & 2 to integral
+	userpar.results_out_put = strdup("results_LP.txt");
 
 	makegraph(&graph, &userpar);
-	
+
 	set_LP_configuration(&graph,&lp,&LP_user_param,&userpar);
 
-	LP_SOLVER(&graph, &lp,&LP_user_param);
+	LP_SOLVER(&graph, &lp,&LP_user_param,&userpar);
 	
 	return 0;
 }

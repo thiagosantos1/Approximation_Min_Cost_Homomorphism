@@ -69,3 +69,6 @@ void construct_LP(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param);
 
 /* Print results from solution found by LP*/
 void print_results(GRAPH *op, LP_MIN_COST * lp);
+
+/* Save result to a file(append if already exists) */
+void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip);

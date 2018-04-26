@@ -18,6 +18,10 @@
 #include <stdlib.h>
 #include <string.h> 
 #include <glpk.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
 //Set bit y (0-indexed) of x to '1' by generating a a mask with a '1' in the proper bit location and ORing x with the mask.
 #define SET_BIT(X,Y) X |= (1 << Y)
 
@@ -61,6 +65,7 @@ typedef struct userdata {
   char *full_list;
   char *list_homom;
   char *list_pairs;
+  char * results_out_put;
 
 } USER_PARAMS;
 
@@ -98,7 +103,7 @@ void makegraph(GRAPH *op, USER_PARAMS *ip);
 void pair_consistency(GRAPH *op, USER_PARAMS * ip);
 
 /* Create and solve the LP desired, in the class LP_Min_Cost.c */
-void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param);
+void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param,USER_PARAMS * ip);
 
 /* Set the default configuration to LP in the class LP_Min_Cost.c */
 void defult_configurations(LP_user_params * lp_param);

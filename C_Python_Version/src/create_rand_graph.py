@@ -12,7 +12,7 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	abs_path = os.getcwd()
 	path = abs_path + sub_path + output_name + ".txt"
 
-	try:
+	try: 
 		list_output = open(path, 'w')
 	except IOError as exc:
 		print("Failure opening file " + str(output_name) + " to write")
@@ -20,24 +20,27 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 
 	vertices = [x for x in range(num_vertices)]
 	partitions = [[] for x in range(num_partition)]
-	max_num_vertices = num_vertices - num_partition
+	max_num_vertices = num_vertices//2
+	num_vertices_partition = 0
 	# create partition
 	for x in range(num_partition-1):
-		num_vertices_partition = random.randint(1, max_num_vertices)
+		
 		
 		if x ==0:
+			num_vertices_partition = random.randint(1, max_num_vertices)
 			partitions[x] = [y for y in range(num_vertices_partition)]
 		else:
 			last = partitions[x-1][len(partitions[x-1])-1]
+			max_num_vertices = (num_vertices - last)//2
+			num_vertices_partition = random.randint(1, max_num_vertices)
 			partitions[x] = [y for y in range(last+1,last+num_vertices_partition+1)]
-		max_num_vertices = num_vertices - len(partitions[x]) -1
+		
 
 	# complete the last partion
 	last_index = num_partition-2
 	last = partitions[last_index][len(partitions[last_index])-1]
 	partitions[last_index+1] = [y for y in range(last+1,num_vertices)]
 	list_output.write(str(num_vertices) + "\n") 
-	print("partition: ",partitions)
 	for x in range(0, len(partitions) -1):
 		bi_partition_vertices = []
 		bi_partition_vertices.extend(partitions[x]) # vertices
@@ -47,7 +50,6 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 			bi_partition_edges_vertices.extend(partitions[x+2]) 
 
 		for vertice in bi_partition_vertices:
-			print(x,len(bi_partition_edges_vertices))
 			rand_num_edges = random.randint(1, len(bi_partition_edges_vertices))
 			edg_list = []
 
@@ -74,8 +76,8 @@ if num_partition < 2:
 	print("num_of_partition must be at least 2")
 	sys.exit(2)
 
-if num_vertices < num_partition:
-	print("Please provide <num_vertices> >= <num_of_partition(>=2)\n")
+if num_vertices < num_partition *2:
+	print("Please provide <num_vertices> >= <num_of_partition(>=2) *2\n")
 	sys.exit(1)
 
 make_rand_bip_graph(num_vertices, num_partition, output_name)

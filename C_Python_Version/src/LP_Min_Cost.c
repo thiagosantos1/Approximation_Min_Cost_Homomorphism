@@ -1,7 +1,7 @@
 #include <graph.h> 
 #include <LP_Min_Cost.h>
 
-#define PRINT_RESULTS
+//#define PRINT_RESULTS
 
 void defult_configurations(LP_user_params * lp_param)
 {
@@ -21,7 +21,7 @@ void set_LP_configuration(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param
 		pair_consistency(op, ip);
 }
 
-void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param)
+void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param,USER_PARAMS * ip)
 {
 	construct_LP(op,lp,lp_param);
 
@@ -34,6 +34,8 @@ void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param)
 
 	#ifdef PRINT_RESULTS 
 		print_results(op,lp);
+	#else
+		save_to_file(op,lp,ip);
 	#endif
 
 	glp_delete_prob(lp->mip);
@@ -589,4 +591,44 @@ void print_results(GRAPH *op, LP_MIN_COST * lp)
 			count =0;
 		}
 	}
+}
+
+void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip)
+{
+	FILE * fp;
+	char folder_path[op->num_vert_G *2];
+	char str_g[op->num_vert_G];
+	char str_h[op->num_vert_H];
+
+	strcpy(folder_path,"../Tests/G_");
+
+	sprintf(str_g, "%d", op->num_vert_G);
+	sprintf(str_h, "%d", op->num_vert_H);
+
+	strcat(folder_path,str_g);
+	strcat(folder_path,"_H");
+	strcat(folder_path,str_h);
+
+	// create new folder to save to tests, if needed
+	struct stat st = {0};
+	if (stat(folder_path, &st) == -1) {
+    mkdir(folder_path, 0700);
+	}
+
+	strcat(folder_path,"/");
+	strcat(folder_path,ip->results_out_put);
+	fp = fopen (folder_path,"a"); // open to append
+
+	double total_cost = glp_mip_obj_val(lp->mip);
+
+	if(lp->variable_type == GLP_CV){
+		fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Continuos Solution\n", 
+		      	op->num_vert_G, op->num_vert_H, total_cost);
+	}else{
+		fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Integral Solution\n", 
+		      	op->num_vert_G, op->num_vert_H, total_cost);
+	}
+ 
+  /* close the file*/  
+  fclose (fp);
 }

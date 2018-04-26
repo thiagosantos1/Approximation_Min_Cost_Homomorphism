@@ -8,30 +8,29 @@ We show another importance of this class of digraphs by designing a constant ap-
 
 ## How to setup and run the code
 
-1) Wanna change paramters of LP, such as, optimal or continuos solution?
+1) Wanna change paramters of LP manualy, such as, optimal or continuos solution?
 	* Go to folder src (Research_Graph_Homomorphism/C_Python_Version/src) and open file main.c
 		* Inside of main, you can change any parameter of the data structe LP_user_params you like, to the options given.
 		* To check all available paramters and options, go to folder include (Research_Graph_Homomorphism/C_Python_Version/include) and open file graph.h
+2) Passing basic paramters by Argv
+	* The 2 basics parameters(pair_consistency and type_solution) you can pass by argv, after the first 6(must have) paramters.
 
-2) Compile the program
+3) Compile the program
 	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* make
-3) Want to create new graphs(G &/or H) ? 
+4) Want to create new graphs(G &/or H) ? 
 	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* For a graph G: python3 create_bip_graph.py <num_vertices>, <num_of_partition(>=2)> & <graph_g>
 		* For a graph H: python3 create_bip_graph_h.py <num_vertices>, <num_of_partition(>=2)> & <graph_h>
 
-4) Have you created or added a new graph(G &/or H)? If yes, do the following:
+5) Have you created or added a new graph(G &/or H)? If yes, do the following:
 	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* make data
 		* make list
 
-5) Run the program
+6) Run the program
 	* Inside of folder src (Research_Graph_Homomorphism/C_Python_Version/src) run the following, at terminal:
-		* If running for continuos solution(Default)
-			* make run > ../etc/continuos.txt (To save at a file)
-		* If running for optimal(integral) solution
-			* make run > ../etc/optimal.txt (To save at a file)
+		* make run 
 
 ## Contributors
 
