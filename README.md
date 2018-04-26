@@ -31,6 +31,11 @@ We show another importance of this class of digraphs by designing a constant ap-
 6) Run the program
 	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/C_Python_Version/src) run the following, at terminal:
 		* make run 
+7) Run the program for multiple instances of H and G with a script
+	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/C_Python_Version/src) run the following, at terminal:
+		* ./run_loop_script.sh <Size of G>, <Size of H>, <number of partitions for graphs> & <Loop repetitions for each H(N)>
+		* How the script works?
+			* For each random H created, we creante N different graphs G, and run the LP twice for each G. Once for Continuos & once for Integral.
 
 ## Contributors
 
