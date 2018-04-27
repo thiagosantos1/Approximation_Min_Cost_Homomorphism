@@ -86,7 +86,7 @@ typedef struct LPdata {
 
 typedef struct LPparam {
 	/* 1 to continuos(default) 
-	   2 to integral  - Optimal
+	   2 to integral  - Optimal*/
 	int type_solution; 
 
 	/* 1(default) to run program with pair consistency

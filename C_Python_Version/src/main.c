@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 
 		/* User LP paramters  --> set by argv */
 		LP_user_param.pair_consistency = atoi(argv[6]); // 1 to true & 2 to false
-		LP_user_param.type_solution		 = atoi(argv[7]); // 1 to continuos, 2 to integral or 3 to run for both
+		LP_user_param.type_solution		 = atoi(argv[7]); // 1 to continuos, 2 to integral 
 	}else{
 
 		/* User LP paramters  --> if not set by argv */

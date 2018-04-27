@@ -33,9 +33,18 @@ We show another importance of this class of digraphs by designing a constant ap-
 		* make run 
 7) Run the program for multiple instances of H and G, with a script
 	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/C_Python_Version/src) run the following, at terminal:
-		* ./run_loop_script.sh <pair_consistency_flag>, <type_solution_flag>, <num_vertices G>, <num_vertices H>, <num_of_partitions> & <Loop repetitions for each H(N)>
+		* ./run_loop_script.sh <pair_consistency_flag> <num_vertices G>, <num_vertices H>, <num_of_partitions>, <is_bipartite>, <num_of_graphs_H> & <Loop repetitions for each H(N)>
 		* How the script works?
 			* For each random H created, we creante N different graphs G, and run the LP twice for each G. Once for Continuos & once for Integral.
+		* Paramters 
+			* pair_consistency_flag --> 1 to run program with pair consistency and 2 without it
+			* num_vertices G --> How many vertices you wanna in G
+			* num_vertices H --> How many vertices you wanna in H
+			* num_of_partitions --> How many partitions the graph has
+			* is_bipartite --> 1 to bipartite and 2 for not.
+			* num_of_graphs_H --> How many graphs H you want to create. 
+			* Loop repetitions for each H(N) --> For each graph H created, how many G you want to create ?
+
 
 
 ## Contributors

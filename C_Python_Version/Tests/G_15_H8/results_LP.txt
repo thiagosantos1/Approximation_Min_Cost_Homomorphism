@@ -1,0 +1,8 @@
+Size of G: 15 | Size of H: 8 | Total Cost: 44243.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Total Cost: 44243.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Total Cost: 43029.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Total Cost: 43029.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Total Cost: 61367.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Total Cost: 61367.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Total Cost: 27938.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Total Cost: 27938.00 | Integral Solution

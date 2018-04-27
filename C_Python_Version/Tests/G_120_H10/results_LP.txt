@@ -1,4 +1,0 @@
-Size of G: 120 | Size of H: 10 | Total Cost: 441559.00 | Continuos Solution
-Size of G: 120 | Size of H: 10 | Total Cost: 441559.00 | Continuos Solution
-Size of G: 120 | Size of H: 10 | Total Cost: 441559.00 | Continuos Solution
-Size of G: 120 | Size of H: 10 | Total Cost: 446694.00 | Integral Solution
