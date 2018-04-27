@@ -2,6 +2,7 @@
 #chmod u+x
 
 ARGC=$#
+BIP=1
 
 EXPECTED_ARGS=7
 E_BADARGS=65
@@ -27,7 +28,7 @@ make
 for (( h=1; h<=$NUM_GRAPHS_H; h++ ))
 do
 	# create H
-	if [$is_bipartite -lt 1] 
+	if [ $is_bipartite -lt $BIP ] 
   then
 		python3 create_bip_graph_h.py $NUM_VERT_H $NUM_PART "graph_h"
 	else
@@ -37,7 +38,7 @@ do
   # loop for each H, create different Gs 
   for (( g=1; g<=$NUM_REP_LOOP; g++ ))
 	do  # create G 
-	  if [$is_bipartite -lt 1] 
+	  if [ $is_bipartite -lt $BIP ] 
 	  then
 			python3 create_bip_graph.py $NUM_VERT_G $NUM_PART "graph_g"
 		else

@@ -1,0 +1,8 @@
+Size of G: 70 | Size of H: 16 | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 70 | Size of H: 16 | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 70 | Size of H: 16 | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 70 | Size of H: 16 | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 70 | Size of H: 16 | Total Cost: 139979.00 | Continuos Solution
+Size of G: 70 | Size of H: 16 | Total Cost: 139979.00 | Integral Solution
+Size of G: 70 | Size of H: 16 | Total Cost: 99029.00 | Continuos Solution
+Size of G: 70 | Size of H: 16 | Total Cost: 99029.00 | Integral Solution

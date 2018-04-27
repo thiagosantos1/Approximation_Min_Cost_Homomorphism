@@ -1,0 +1,4 @@
+Size of G: 40 | Size of H: 15 | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 40 | Size of H: 15 | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 40 | Size of H: 15 | Total Cost: 158366.00 | Continuos Solution
+Size of G: 40 | Size of H: 15 | Total Cost: 158366.00 | Integral Solution
