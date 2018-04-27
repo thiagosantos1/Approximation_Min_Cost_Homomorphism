@@ -12,7 +12,8 @@
 int pair_reduction(GRAPH *op, USER_PARAMS * ip, int num_vert_G,int num_vert_H, int x, int y, int z);
 
 void pair_consistency(GRAPH *op, USER_PARAMS * ip)
-{
+{	
+	fprintf(stderr, "\n\t\t*** Pair Consistency has started ***\n" );
 	int done = -1,stop = 1; 
 
 	while( done <=0 ){
@@ -37,6 +38,8 @@ void pair_consistency(GRAPH *op, USER_PARAMS * ip)
 			}
 		}
 	}
+
+	fprintf(stderr, "\t\t*** Pair Consistency done ***\n" );
 }
 
 int pair_reduction(GRAPH *op, USER_PARAMS * ip, int num_vert_G,int num_vert_H, int x, int y, int z)

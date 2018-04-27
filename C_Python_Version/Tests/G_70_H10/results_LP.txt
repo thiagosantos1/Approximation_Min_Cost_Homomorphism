@@ -1,0 +1,4 @@
+Size of G: 70 | Size of H: 10 | Total Cost: 257311.00 | Continuos Solution
+Size of G: 70 | Size of H: 10 | Total Cost: 257311.00 | Integral Solution
+Size of G: 70 | Size of H: 10 | Total Cost: 288407.50 | Continuos Solution
+Size of G: 70 | Size of H: 10 | Total Cost: 289664.00 | Integral Solution
