@@ -3,7 +3,7 @@ HDR1   = ../include/graph.h
 OPT    = -g -Wall
 CFLAGS = -c -I../include
 LIBS   = -lglpk
-OBJS   = makegraph.o greedy.o utils.o bipartite.o
+OBJS   = makegraph.o greedy.o utils.o bipartite.o 
 
 all: LP_run
 
@@ -30,3 +30,4 @@ list: list
 
 run: run
 	../bin/./LP_run ../etc/graph_g.txt ../etc/graph_h.txt ../etc/list_cost.txt ../etc/list_homom.txt ../etc/list_pairs.txt
+	

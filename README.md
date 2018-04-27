@@ -30,7 +30,7 @@ We show another importance of this class of digraphs by designing a constant ap-
 
 6) Run the program
 	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/C_Python_Version/src) run the following, at terminal:
-		* make run 
+		* make run (It runs with default configuration, unless you have changed, in step 1) 
 7) Run the program for multiple instances of H and G, with a script
 	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/C_Python_Version/src) run the following, at terminal:
 		* ./run_loop_script.sh <pair_consistency_flag> <num_vertices G>, <num_vertices H>, <num_of_partitions>, <is_bipartite>, <num_of_graphs_H> & <Loop repetitions for each H(N)>
