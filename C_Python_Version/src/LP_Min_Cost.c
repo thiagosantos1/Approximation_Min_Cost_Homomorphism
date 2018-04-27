@@ -622,13 +622,24 @@ void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip)
 	double total_cost = glp_mip_obj_val(lp->mip);
 
 	if(lp->variable_type == GLP_CV){
-		fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Continuos Solution\n", 
-		      	op->num_vert_G, op->num_vert_H, total_cost);
+		if(total_cost >0)
+			fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Continuos Solution\n", 
+		      		op->num_vert_G, op->num_vert_H, total_cost);
+		else
+			fprintf (fp,"Size of G: %d | Size of H: %d | SOLUTION NOT FOUND | Continuos Solution\n", 
+		      		op->num_vert_G, op->num_vert_H);
 	}else{
-		fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Integral Solution\n", 
-		      	op->num_vert_G, op->num_vert_H, total_cost);
+		if(total_cost > 0)
+			fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Integral Solution\n", 
+		      		op->num_vert_G, op->num_vert_H, total_cost);
+		else
+			fprintf (fp,"Size of G: %d | Size of H: %d | SOLUTION NOT FOUND | Continuos Solution\n", 
+		      		op->num_vert_G, op->num_vert_H);
 	}
  
   /* close the file*/  
   fclose (fp);
 }
+
+
+
