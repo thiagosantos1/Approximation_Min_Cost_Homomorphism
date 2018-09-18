@@ -3,7 +3,7 @@
 # it's given 3 files. Digraph G and Digraph H and a List T with the list of vertices on H that each vertex in G can match with it
 
 # when executing this file, 2 output files is gonna be generated
-# 1) An updated homomophism list from G to h --> list_homom
+# 1) An updated homomophism list from G to h --> list_homom 
 # 2) A file with all pairs available in H for each pair in G  --> pairs_list
 import random
 import sys
@@ -97,7 +97,9 @@ class Graph:
       print("Failure opening file " + str(file_name) )
       sys.exit(2)
 
-    num_vertices = int(graph_file.readline())
+    line = graph_file.readline()
+    line = line.split()
+    num_vertices = int(line[0])
     for x in range(1,num_vertices+1):
       self.add_vertex(Vertex(x))
      

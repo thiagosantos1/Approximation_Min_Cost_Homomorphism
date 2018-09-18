@@ -15,7 +15,7 @@
 
 /* function to initialize LP, with the desired paramters and consigurations */
 void initi_LP(GRAPH *op, LP_MIN_COST * lp);
-
+ 
 /* function to check if more memory is needed */
 void reallocate_memory_check(LP_MIN_COST * lp); 
 
@@ -71,4 +71,4 @@ void construct_LP(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param);
 void print_results(GRAPH *op, LP_MIN_COST * lp);
 
 /* Save result to a file(append if already exists) */
-void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip);
+void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip, LP_user_params * lp_param);

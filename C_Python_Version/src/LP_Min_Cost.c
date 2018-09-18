@@ -35,7 +35,7 @@ void LP_SOLVER(GRAPH *op, LP_MIN_COST * lp, LP_user_params * lp_param,USER_PARAM
 	#ifdef PRINT_RESULTS 
 		print_results(op,lp);
 	#else
-		save_to_file(op,lp,ip);
+		save_to_file(op,lp,ip,lp_param);
 	#endif
 
 	glp_delete_prob(lp->mip);
@@ -587,13 +587,13 @@ void print_results(GRAPH *op, LP_MIN_COST * lp)
 			fprintf(stderr,"\n");
 			g = (i/op->num_vert_H)+1;
 			if(g < op->num_vert_G)
-				fprintf(stderr,"G %d: ",g);
+				fprintf(stderr,"G %d: ",g); 
 			count =0;
 		}
 	}
 }
 
-void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip)
+void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip, LP_user_params * lp_param)
 {
 	FILE * fp;
 	char folder_path[op->num_vert_G *2];
@@ -623,18 +623,18 @@ void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip)
 
 	if(lp->variable_type == GLP_CV){
 		if(total_cost >0)
-			fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Continuos Solution\n", 
-		      		op->num_vert_G, op->num_vert_H, total_cost);
+			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | Total Cost: %0.2f | Continuos Solution\n", 
+		      		op->num_vert_G,op->isBipartite_G ==1 ? "Yes":"No ",op->numPartitions_G, op->num_vert_H,op->isBipartite_H ==1 ? "Yes":"No ",op->numPartitions_H, lp_param->pair_consistency ==1 ? "Used    ":"Not used" , total_cost);
 		else
-			fprintf (fp,"Size of G: %d | Size of H: %d | SOLUTION NOT FOUND | Continuos Solution\n", 
-		      		op->num_vert_G, op->num_vert_H);
+			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | SOLUTION NOT FOUND | Continuos Solution\n", 
+		      		op->num_vert_G,op->isBipartite_G ==1 ? "Yes":"No ",op->numPartitions_G, op->num_vert_H,op->isBipartite_H ==1 ? "Yes":"No ",op->numPartitions_H, lp_param->pair_consistency ==1 ? "Used    ":"Not used");
 	}else{
 		if(total_cost > 0)
-			fprintf (fp,"Size of G: %d | Size of H: %d | Total Cost: %0.2f | Integral Solution\n", 
-		      		op->num_vert_G, op->num_vert_H, total_cost);
+			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | Total Cost: %0.2f | Integral Solution\n", 
+		      		op->num_vert_G,op->isBipartite_G ==1 ? "Yes":"No ",op->numPartitions_G, op->num_vert_H,op->isBipartite_H ==1 ? "Yes":"No ",op->numPartitions_H, lp_param->pair_consistency ==1 ? "Used    ":"Not used" , total_cost);
 		else
-			fprintf (fp,"Size of G: %d | Size of H: %d | SOLUTION NOT FOUND | Continuos Solution\n", 
-		      		op->num_vert_G, op->num_vert_H);
+			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | SOLUTION NOT FOUND | Integral Solution\n", 
+		      		op->num_vert_G,op->isBipartite_G ==1 ? "Yes":"No ",op->numPartitions_G, op->num_vert_H,op->isBipartite_H ==1 ? "Yes":"No ",op->numPartitions_H, lp_param->pair_consistency ==1 ? "Used    ":"Not used");
 	}
  
   /* close the file*/  

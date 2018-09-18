@@ -18,7 +18,7 @@
 #include <stdlib.h>
 #include <string.h> 
 #include <glpk.h>
-#include <sys/types.h>
+#include <sys/types.h> 
 #include <sys/stat.h>
 #include <unistd.h>
 
@@ -55,6 +55,12 @@ typedef struct graphdata {
 	int num_vert_H;
 	int size_g_pairs; // use to create pairs_matrix and to acess it
 	int size_h_pairs;
+
+	int isBipartite_G; // 1 for true and 2 for false
+	int isBipartite_H;
+
+	int numPartitions_G; // number of partitions in the graph
+	int numPartitions_H;
 
 } GRAPH;
 

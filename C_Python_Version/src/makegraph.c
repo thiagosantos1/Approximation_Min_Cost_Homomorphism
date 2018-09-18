@@ -24,9 +24,11 @@ void init_graph_g(GRAPH *op, char * file_name)
 		exit(0);
 	}
 	int i,j;
-	char str1[10000],str2[10000];
-  fscanf(fp, "%s", str1);
+	char str1[10000],str2[10000],str3[10000],str4[10000];
+  fscanf(fp, "%s %s %s", str1,str3,str4);
   op->num_vert_G = atoi(str1);
+  op->isBipartite_G = atoi(str3);
+  op->numPartitions_G = atoi(str4);
 
   op->graph_g = malloc(op->num_vert_G * sizeof(uchar *));
   for(i=0; i<op->num_vert_G; i++){
@@ -39,6 +41,7 @@ void init_graph_g(GRAPH *op, char * file_name)
   	j = atoi(str2);
   	op->graph_g[i][j] = 1;
   }
+
 }
 
 void init_graph_h(GRAPH *op, char * file_name)
@@ -49,9 +52,11 @@ void init_graph_h(GRAPH *op, char * file_name)
 		exit(0);
 	}
 	int i,j;
-	char str1[10000],str2[10000];
-  fscanf(fp, "%s", str1);
+	char str1[10000],str2[10000],str3[10000],str4[10000];
+  fscanf(fp, "%s %s %s", str1,str3,str4);
   op->num_vert_H = atoi(str1);
+  op->isBipartite_H = atoi(str3);
+  op->numPartitions_H = atoi(str4);
 
   op->graph_h = malloc(op->num_vert_H * sizeof(uchar *));
   for(i=0; i<op->num_vert_H; i++){

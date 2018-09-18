@@ -1,0 +1,70 @@
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 19414.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 19414.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 18231.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 18231.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 31237.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 31237.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 24592.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 24592.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 33045.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 33045.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 18844.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 18844.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 40832.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 40832.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 29932.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 29932.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 28595.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 28595.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 17154.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 17154.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 25336.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 25336.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 33034.67 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 33494.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 29132.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 29132.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 29570.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 29570.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 19825.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 19825.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 30960.33 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 31363.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 30211.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 30211.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 19366.33 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 19802.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 22842.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 22842.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 40755.67 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 41913.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 21048.67 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 21426.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 28525.78 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 28875.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 27094.33 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 27097.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 27158.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 27158.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 21591.67 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Used | Total Cost: 21848.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 38415.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 38415.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 36210.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 36210.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 21747.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 21747.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 25379.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 25379.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 27166.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 27166.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 14848.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 14848.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 38435.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 38435.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 27592.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 27592.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 14079.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 14079.00 | Integral Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 27968.00 | Continuos Solution
+Size of G: 10 | Size of H: 10 | Pair Consistency: Not used | Total Cost: 28468.00 | Integral Solution

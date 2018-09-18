@@ -6,3 +6,8 @@ Size of G: 70 | Size of H: 17 | Total Cost: 83739.00 | Continuos Solution
 Size of G: 70 | Size of H: 17 | Total Cost: 83739.00 | Integral Solution
 Size of G: 70 | Size of H: 17 | Total Cost: 124089.00 | Continuos Solution
 Size of G: 70 | Size of H: 17 | Total Cost: 124089.00 | Integral Solution
+Size of G: 70 | Size of H: 17 | Total Cost: 124089.00 | Continuos Solution
+Size of G: 70 | Size of H: 17 | Total Cost: 124089.00 | Continuos Solution
+Size of G: 70 | Size of H: 17 | Total Cost: 124089.00 | Continuos Solution
+Size of G: 70 | Size of H: 17 | Total Cost: 124089.00 | Continuos Solution
+Size of G: 70 | Size of H: 17 | Total Cost: 124089.00 | Continuos Solution

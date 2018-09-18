@@ -6,3 +6,23 @@ Size of G: 15 | Size of H: 8 | Total Cost: 61367.00 | Continuos Solution
 Size of G: 15 | Size of H: 8 | Total Cost: 61367.00 | Integral Solution
 Size of G: 15 | Size of H: 8 | Total Cost: 27938.00 | Continuos Solution
 Size of G: 15 | Size of H: 8 | Total Cost: 27938.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 29339.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 29339.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 16988.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 16988.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 43992.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 43992.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 93084.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 93084.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 41245.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 41245.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 52861.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 52861.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 76096.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 76096.00 | Integral Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 53847.00 | Continuos Solution
+Size of G: 15 | Size of H: 8 | Pair Consistency: Not used | Total Cost: 53847.00 | Integral Solution

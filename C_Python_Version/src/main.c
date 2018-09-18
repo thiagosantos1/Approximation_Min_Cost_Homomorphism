@@ -11,7 +11,7 @@
 #include <graph.h> 
 
 int main(int argc, char const *argv[])
-{
+{ 
 	USER_PARAMS userpar;
   GRAPH graph;
   LP_MIN_COST lp;

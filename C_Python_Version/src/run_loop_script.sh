@@ -2,7 +2,7 @@
 #chmod u+x
 
 ARGC=$#
-BIP=1
+BIP=2
 
 EXPECTED_ARGS=7
 E_BADARGS=65
@@ -24,7 +24,7 @@ NUM_REP_LOOP="$7"
 # make sure to recompile if needed
 make
 
-#loop for how graph H you wanna create
+#loop for how many graphs H you wanna create
 for (( h=1; h<=$NUM_GRAPHS_H; h++ ))
 do
 	# create H

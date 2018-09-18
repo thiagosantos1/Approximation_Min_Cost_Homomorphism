@@ -1,6 +1,6 @@
 import random
 import sys
-import os # to get full directory
+import os # to get full directory 
 
 # program to create a random bipirtite graph, with N vertices
 # in the promp, the user defines N, as well the percentage of vertices in the left of graph
@@ -40,7 +40,9 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	last_index = num_partition-2
 	last = partitions[last_index][len(partitions[last_index])-1]
 	partitions[last_index+1] = [y for y in range(last+1,num_vertices)]
-	list_output.write(str(num_vertices) + "\n") 
+
+	# Create header of file. number of vertices, isBipartite(1 yes 2 is not), number of partitions in the graph
+	list_output.write(str(num_vertices) + " "+  str(1) + " "+  str(num_partition) + "\n") 
 	for x in range(0, len(partitions) -1):
 		bi_partition_vertices = []
 		bi_partition_vertices.extend(partitions[x]) # vertices

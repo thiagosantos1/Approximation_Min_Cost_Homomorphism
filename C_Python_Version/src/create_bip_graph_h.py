@@ -7,7 +7,7 @@ import os # to get full directory
 
 def make_rand_bip_graph(num_vertices, num_partition, output_name):
 
-	# to save in the octave folder
+	# to save in the octave folder 
 	sub_path = "/../etc/" # to save the file in the LP folder automatic
 	abs_path = os.getcwd()
 	path = abs_path + sub_path + output_name + ".txt" 
@@ -38,7 +38,9 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	last_index = num_partition-2
 	last = partitions[last_index][len(partitions[last_index])-1]
 	partitions[last_index+1] = [y for y in range(last+1,num_vertices)]
-	list_output.write(str(num_vertices) + "\n") 
+	
+	# Create header of file. number of vertices, isBipartite(1 yes 2 is not), number of partitions in the graph
+	list_output.write(str(num_vertices) + " "+  str(1) + " "+  str(num_partition) ) 
 
 	for x in range(0, len(partitions) -1):
 		bi_partition_vertices = partitions[x] # vertices
@@ -80,7 +82,8 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	for i in range(0,len(matrix_graph)):
 		for j in range(0,len(matrix_graph)):
 			if matrix_graph[i][j] == 1:
-				list_output.write(str(i) + " " + str(j) + "\n")
+				list_output.write("\n")
+				list_output.write(str(i) + " " + str(j))
 
 if len(sys.argv) < 4:
   print("Please provide <num_vertices>, <num_of_partition(>=2)> & <output_name>\n")

@@ -2,7 +2,7 @@
 # Get's a file with an edge list, and creates a new cost list, with randowm cost of maping 
 import os # to get full directory
 import random
-import sys
+import sys 
 
 def process_data(graph_g, graph_h):
   sub_path = "/../etc/" # to save the file in the LP folder automatic
@@ -17,7 +17,9 @@ def process_data(graph_g, graph_h):
     print("Failure opening file " + str(graph_g) )
     sys.exit(2)
 
-  num_vertices_g = int(graph_file.readline())
+  line = graph_file.readline()
+  line = line.split()
+  num_vertices_g = int(line[0])
   left_g = []
   right_g = []
 
@@ -40,7 +42,10 @@ def process_data(graph_g, graph_h):
     print("Failure opening file " + str(graph_h) )
     sys.exit(2)
 
-  num_vertices_h = int(graph_file.readline())
+  line = graph_file.readline()
+  line = line.split()
+  num_vertices_h = int(line[0])
+
   left_h = []
   right_h = []
   

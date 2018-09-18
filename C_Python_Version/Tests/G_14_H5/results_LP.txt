@@ -1,0 +1,26 @@
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 40306.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 40306.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 48593.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 48593.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 58685.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 58685.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 58441.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 58441.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 60372.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 60372.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 67227.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 67227.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 58995.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 58995.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 57579.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 57579.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 49705.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 49705.00 | Integral Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 75518.00 | Continuos Solution
+Size of G: 14 | Size of H: 5 | Pair Consistency: Used | Total Cost: 75518.00 | Integral Solution
+Size of G: 14 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 5 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 43038.00 | Continuos Solution
+Size of G: 14 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 5 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 43038.00 | Integral Solution
