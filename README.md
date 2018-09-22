@@ -6,7 +6,7 @@ This digraphs introduced recently by Dr.Rafiey. They admit a number of equivalen
 of  min-orderings),  then  the  list  homomorphism  problem  to H is  known  to  admit  a polynomial time algorithm.The bi-arc digraphs contain the class of monotone proper- interval bigraphs the digraphs that admit a min-max ordering.If a digraph H admits a min-max (and extended min-max) ordering then minimum cost homomorphism to H, MinHOM(H), is polynomial time solvable and NP-complete otherwise.</br>
 We show another importance of this class of digraphs by designing a constant ap- proximation algorithm for minimum cost homomorphism.  When H is a target digraphs and admits a min-ordering then MinHOM(H), can be approximated within a constant factor.
 
-## How to setup and run the code
+## How to setup and run the code 
 
 1) Wanna change paramters of LP manualy, such as, optimal or continuos solution?
 	* Go to folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/src) and open file main.c
@@ -31,7 +31,7 @@ We show another importance of this class of digraphs by designing a constant ap-
 6) Run the program
 	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* make run (It runs with default configuration, unless you have changed, in step 1) 
-7) Run the program for multiple instances of H and G, with a script
+7) Run the program for multiple instances of H and G(Both random created), with a script
 	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/src) run the following, at terminal:
 		* ./run_loop_script.sh <pair_consistency_flag> <num_vertices G>, <num_vertices H>, <num_of_partitions>, <is_bipartite>, <num_of_graphs_H> & <Loop repetitions for each H(N)>
 		* How the script works?
@@ -45,6 +45,18 @@ We show another importance of this class of digraphs by designing a constant ap-
 			* num_of_graphs_H --> How many graphs H you want to create. 
 			* Loop repetitions for each H(N) --> For each graph H created, how many G you want to create ?
 
+8) Run the program for multiple instances of G, from a fixed graph H, with a script
+	* Inside of folder src (Approximation_Min_Cost_Homomorphism/C_Python_Version/src) run the following, at terminal:
+		* ./run_loop_fixed_H_script.sh <pair_consistency_flag> <num_vertices G>, <num_of_partitions>, <is_bipartite> & <num_of_graphs_G> 
+		* How the script works?
+			* For a fixed graph h(located in etc/graph_h.txt), we creante N different graphs G, and run the LP twice for each G. Once for Continuos & once for Integral.
+		* Paramters 
+			* pair_consistency_flag --> 1 to run program with pair consistency and 2 without it
+			* num_vertices G --> How many vertices you wanna in G
+			* num_of_partitions --> How many partitions the graph has
+			* is_bipartite --> 1 to bipartite and 2 for not(If more than one partition, we check if each partition n & n+1 is bipartite).
+			* num_of_graphs_G --> How many graphs G you want to create. 
+			
 
 
 ## Contributors
