@@ -1,8 +1,0 @@
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 47872.00 | Continuos Solution
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 47872.00 | Integral Solution
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 37477.00 | Continuos Solution
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 37477.00 | Integral Solution
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 41818.00 | Continuos Solution
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 41818.00 | Integral Solution
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 68419.00 | Continuos Solution
-Size of G: 13 | Size of H: 5 | Pair Consistency: Not used | Total Cost: 68419.00 | Integral Solution
