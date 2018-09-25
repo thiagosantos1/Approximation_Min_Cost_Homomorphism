@@ -20,7 +20,8 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 
 	vertices = [x for x in range(num_vertices)]
 	partitions = [[] for x in range(num_partition)]
-	max_num_vertices = num_vertices - num_partition
+	max_num_vertices = num_vertices - num_partition 
+	total_vertices = 0
 	# create partition
 	for x in range(num_partition-1):
 		num_vertices_partition = random.randint(1, max_num_vertices)
@@ -30,7 +31,9 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 		else:
 			last = partitions[x-1][len(partitions[x-1])-1]
 			partitions[x] = [y for y in range(last+1,last+num_vertices_partition+1)]
-		max_num_vertices = num_vertices - len(partitions[x]) -1
+
+		total_vertices += num_vertices_partition
+		max_num_vertices = num_vertices - total_vertices - 1
 
 	# complete the last partion
 	last_index = num_partition-2
@@ -50,13 +53,23 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 				max_degre = max_degre#//2
 
 			rand_num_edges = random.randint(1, max_degre)
+			num_edges = 0
+			edge_verti = 0
 
-			while len(edg_list) < rand_num_edges: # untill all edges of vertice has not been choosen, keep addind
+			while num_edges< rand_num_edges: # untill all edges of vertice has not been choosen, keep addind
 				index = random.randint(0, len(bi_partition_edges_vertices)-1)
 				edge_verti = bi_partition_edges_vertices[index]
 				if edge_verti not in edg_list:
 					edg_list.append(edge_verti)
-			edg_list.sort()
+					num_edges +=1
+				edg_list.sort()
+
+			# while len(edg_list) < rand_num_edges: # untill all edges of vertice has not been choosen, keep addind
+			# 	index = random.randint(0, len(bi_partition_edges_vertices)-1)
+			# 	edge_verti = bi_partition_edges_vertices[index]
+			# 	if edge_verti not in edg_list:
+			# 		edg_list.append(edge_verti)
+			# edg_list.sort()
 
 			for edge in edg_list:
 				list_output.write(str(vertice) + " " + str(edge))

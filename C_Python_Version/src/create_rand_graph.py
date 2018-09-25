@@ -42,7 +42,7 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	partitions[last_index+1] = [y for y in range(last+1,num_vertices)]
 
 	# Create header of file. number of vertices, isBipartite(1 yes 2 is not), number of partitions in the graph
-	list_output.write(str(num_vertices) + " "+  str(1) + " "+  str(num_partition) + "\n") 
+	list_output.write(str(num_vertices) + " "+  str(2) + " "+  str(num_partition) + "\n") 
 	for x in range(0, len(partitions) -1):
 		bi_partition_vertices = []
 		bi_partition_vertices.extend(partitions[x]) # vertices

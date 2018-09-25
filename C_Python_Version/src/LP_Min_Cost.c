@@ -630,10 +630,10 @@ void save_to_file(GRAPH *op, LP_MIN_COST * lp,USER_PARAMS * ip, LP_user_params *
 		      		op->num_vert_G,op->isBipartite_G ==1 ? "Yes":"No ",op->numPartitions_G, op->num_vert_H,op->isBipartite_H ==1 ? "Yes":"No ",op->numPartitions_H, lp_param->pair_consistency ==1 ? "Used    ":"Not used");
 	}else{
 		if(total_cost > 0)
-			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | Total Cost: %0.2f | Integral Solution\n", 
+			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | Total Cost: %0.2f | Integral Solution\n\n", 
 		      		op->num_vert_G,op->isBipartite_G ==1 ? "Yes":"No ",op->numPartitions_G, op->num_vert_H,op->isBipartite_H ==1 ? "Yes":"No ",op->numPartitions_H, lp_param->pair_consistency ==1 ? "Used    ":"Not used" , total_cost);
 		else
-			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | SOLUTION NOT FOUND | Integral Solution\n", 
+			fprintf (fp,"Size of G: %d | G is Bipartite: %s | Num Partitions in G: %d | Size of H: %d | H is Bipartite: %s | Num Partitions in H: %d | Pair Consistency: %s | SOLUTION NOT FOUND | Integral Solution\n\n", 
 		      		op->num_vert_G,op->isBipartite_G ==1 ? "Yes":"No ",op->numPartitions_G, op->num_vert_H,op->isBipartite_H ==1 ? "Yes":"No ",op->numPartitions_H, lp_param->pair_consistency ==1 ? "Used    ":"Not used");
 	}
  

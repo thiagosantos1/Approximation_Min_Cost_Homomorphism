@@ -22,7 +22,7 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	partitions = [[] for x in range(num_partition)]
 	max_num_vertices = num_vertices - num_partition
 	matrix_graph = [[0 for x in range(num_vertices)] for y in range(num_vertices)]
-	
+	total_vertices = 0 
 	# create partition
 	for x in range(num_partition-1):
 		num_vertices_partition = random.randint(1, max_num_vertices)
@@ -32,7 +32,9 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 		else:
 			last = partitions[x-1][len(partitions[x-1])-1]
 			partitions[x] = [y for y in range(last+1,last+num_vertices_partition+1)]
-		max_num_vertices = num_vertices - len(partitions[x]) -1
+
+		total_vertices += num_vertices_partition
+		max_num_vertices = num_vertices - total_vertices - 1
 
 	# complete the last partion
 	last_index = num_partition-2
@@ -41,7 +43,6 @@ def make_rand_bip_graph(num_vertices, num_partition, output_name):
 	
 	# Create header of file. number of vertices, isBipartite(1 yes 2 is not), number of partitions in the graph
 	list_output.write(str(num_vertices) + " "+  str(1) + " "+  str(num_partition) ) 
-
 	for x in range(0, len(partitions) -1):
 		bi_partition_vertices = partitions[x] # vertices
 		bi_partition_edges_vertices = partitions[x+1] # to connect with edges

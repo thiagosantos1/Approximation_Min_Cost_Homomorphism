@@ -12,7 +12,7 @@
 
 int main(int argc, char const *argv[])
 { 
-	USER_PARAMS userpar;
+  USER_PARAMS userpar;
   GRAPH graph;
   LP_MIN_COST lp;
   LP_user_params LP_user_param;

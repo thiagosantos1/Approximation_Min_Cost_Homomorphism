@@ -1,7 +1,7 @@
 #!/bin/sh
 #chmod u+x
 
-ARGC=$#
+ARGC=$#  
 BIP=2
 
 EXPECTED_ARGS=7

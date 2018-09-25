@@ -1,0 +1,42 @@
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 937739.74 | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 988343.00 | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 775429.85 | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 922626.00 | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 910513.95 | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 954480.00 | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 864511.50 | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 936592.00 | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 771176.67 | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 908298.00 | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 200 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
