@@ -25,21 +25,22 @@ graphs_h=(8 12 15)
 graphs_g=(100 150 200 300)
 
 # for each desired size of H and G
-for h in "${graphs_h[@]}"
+for h_size in "${graphs_h[@]}"
 do
-   for g in "${graphs_g[@]}"
+   for g_size in "${graphs_g[@]}"
 	do
 	   #loop for how many graphs H you wanna create
 		for (( h=1; h<=$NUM_GRAPHS_H; h++ ))
 		do
 
-			python3 create_bip_graph_h.py $h $NUM_PART "graph_h"
+			python3 create_bip_graph_h.py $h_size $NUM_PART "graph_h"
+			echo $h_size $NUM_PART
 
 		  # loop for each H, create different Gs 
 		  for (( g=1; g<=$NUM_REP_LOOP; g++ ))
 			do  # create G 
 		
-				python3 create_bip_graph.py $g $NUM_PART "graph_g"
+				python3 create_bip_graph.py $g_size $NUM_PART "graph_g"
 			
 				# pre-process data and run list reduction
 				make data
