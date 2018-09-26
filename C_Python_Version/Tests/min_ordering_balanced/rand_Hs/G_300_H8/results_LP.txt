@@ -1,0 +1,450 @@
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | SOLUTION NOT FOUND | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 617869.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 617869.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 815368.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 815368.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 669826.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 669854.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 841184.70 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 842216.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 847485.50 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 847508.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1159365.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1159365.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 936635.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 936635.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 808845.50 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 808853.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 942041.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 942094.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 796441.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 796441.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 922293.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 922327.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1010280.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1010280.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974008.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974008.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1118457.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1118457.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 833992.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 833992.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 634563.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 634563.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1051717.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1051717.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 706323.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 706323.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 964151.67 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 964165.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1281926.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1281926.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1092592.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1092592.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 892821.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 892873.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 981868.25 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 981957.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1139119.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1139119.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 665748.50 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 665757.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1106707.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1106776.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 857473.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 857473.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 764126.75 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 764216.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 835488.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 835496.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 692185.50 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 692235.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1195810.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1195810.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1363804.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1363804.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 821575.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 821575.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 934233.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 934233.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1195445.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1195445.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1016866.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1016866.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 846662.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 846662.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1135331.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1135331.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 800178.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 800178.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1295964.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1295964.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1276695.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1276695.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1055369.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1055369.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1097632.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1097632.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1236302.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1236302.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 763761.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 763761.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1340449.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1340449.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 857527.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 857527.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1015511.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1015511.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1053646.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1053646.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1187334.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1187334.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 915720.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 915720.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 752767.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 752767.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 775177.50 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 775239.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1358220.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1358220.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1400496.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1400496.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 891007.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 891007.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 940072.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 940072.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1173630.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1173630.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 794883.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 794883.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1205581.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1205581.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 868180.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 868180.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 975823.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 975823.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 918365.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 918365.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1035282.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1035282.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1051431.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1051431.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974955.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974955.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 954416.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 954416.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 956666.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 956666.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 962852.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 962852.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1035377.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1035377.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1004990.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1004990.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 826705.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 826705.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 930942.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 930942.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 894083.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 894083.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 885385.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 885385.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 884425.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 884425.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1009533.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1009533.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1059990.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1059990.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1055724.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1055724.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1003635.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1003635.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1041618.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1041618.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 760285.69 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 764288.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 797502.33 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 797564.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 935094.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 935094.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 962679.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 962679.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974794.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974794.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974926.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 974926.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 777377.45 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 778764.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 979827.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 979827.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1051186.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1051186.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1473152.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1473152.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1580849.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1580849.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1380267.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1380267.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1303115.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1303115.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1299132.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1299132.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1270005.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1270005.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1235416.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1235416.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1281041.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1281041.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 958914.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 958914.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1091451.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1091451.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1495486.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1495486.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1468690.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1468690.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1158970.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1158970.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1085467.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1085467.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1444716.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1444716.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1533409.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1533409.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1442949.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1442949.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1241407.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1241407.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1464019.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1464019.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1432995.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1432995.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1504814.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1504814.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1408261.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1408261.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1497773.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1497773.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1370597.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1370597.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1237776.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1237776.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1253222.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1253222.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1396278.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1396278.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1346371.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1346371.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1455701.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1455701.00 | Integral Solution
+
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1356400.00 | Continuos Solution
+Size of G: 300 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 8 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 1356400.00 | Integral Solution
+
