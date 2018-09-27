@@ -9,19 +9,20 @@ E_BADARGS=65
 
 if [ $# -lt $EXPECTED_ARGS ]
 then
-  echo "Usage: `basename $0` {argv}. <pair_consistency>, <num_of_partitions>, <num of graphs H> & <Loop repetitions G>"
+  echo "Usage: `basename $0` {argv}. <pair_consistency>, <num_of_partitions>, <isBipartite> & <Loop repetitions G>"
   exit $E_BADARGS
 fi
 
 PAIR_FLAG="$1" 
 NUM_PART="$2"
-NUM_GRAPHS_H="$3"
+isBipartite="$3"
 NUM_REP_LOOP="$4"
 
 # make sure to recompile if needed
 make
 
-graphs_g=(100 150 200 300)
+graphs_g=(1100 1300 1400 1500 1600)
+
 
 # for each desired size of G
 for g_size in "${graphs_g[@]}"
@@ -30,8 +31,13 @@ do
   # loop for the fixed H, create different Gs 
   for (( g=1; g<=$NUM_REP_LOOP; g++ ))
 	do  # create G 
-
-		python3 create_bip_graph.py $g_size $NUM_PART "graph_g"
+		if [ $isBipartite -eq 1 ]
+    then
+      python3 create_bip_graph.py $g_size $NUM_PART "graph_g"
+    else
+      python3 create_rand_graph.py.py $g_size $NUM_PART "graph_g"
+    fi
+		
 	
 		# pre-process data and run list reduction
 		make data
