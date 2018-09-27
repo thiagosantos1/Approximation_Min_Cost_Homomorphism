@@ -9,4 +9,3 @@ Size of G: 1200 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 10 |
 
 Size of G: 1200 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 4248792.07 | Continuos Solution
 Size of G: 1200 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 4294410.00 | Integral Solution
-
