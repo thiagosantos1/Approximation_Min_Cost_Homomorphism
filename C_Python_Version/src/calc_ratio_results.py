@@ -3,7 +3,7 @@
  
 import sys
 import re
-
+from decimal import *
 
 def main():
   if len(sys.argv) < 2:
@@ -11,6 +11,7 @@ def main():
     sys.exit(1)
 
   file_path = sys.argv[1]
+  getcontext().prec = 6
 
   try:
     with open(file_path,"r") as file:
@@ -35,8 +36,8 @@ def main():
           if isIntegral:
             total_Integral += cost
             integral_value = cost
-            if (continuos_value/integral_value) <= max_ratio:
-              max_ratio = continuos_value/integral_value
+            if ( float( Decimal(continuos_value) / Decimal(integral_value) )) <= max_ratio:
+              max_ratio = float( Decimal(continuos_value) / Decimal(integral_value))
           else:
             total_Continuos += cost
             continuos_value = cost
@@ -47,7 +48,7 @@ def main():
     file_out = file_path_splt[0] + "_ration.txt"
 
     with open(file_out,"w") as file:
-      file.write(str(total_Continuos/total_Integral) +"\n")
+      file.write(str(float( Decimal(total_Continuos) / Decimal(total_Integral) ) ) +"\n")
       file.write(str(max_ratio))
       file.close()
 
