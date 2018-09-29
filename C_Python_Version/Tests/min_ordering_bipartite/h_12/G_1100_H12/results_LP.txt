@@ -1,0 +1,2 @@
+Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 3427723.67 | Continuos Solution
+Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 4418282.00 | Integral Solution

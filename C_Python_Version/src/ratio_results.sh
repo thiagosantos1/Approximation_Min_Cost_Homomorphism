@@ -35,12 +35,20 @@ do
       out_path="$tests/$dir/$sub_dir/$test_dir/results_LP_ration.txt"
       python3 calc_ratio_results.py $path_test
 
-      out_ratio=""
+      avg_ratio=""
+      min_ratio=""
+      stop=1
       while IFS='' read -r line || [[ -n "$line" ]]; do
-        out_ratio="$line"
-        break
+        if [ $stop -eq 1 ]
+        then
+          avg_ratio="$line"
+          stop=$((stop+1))
+        else
+          min_ratio="$line"
+          break
+        fi
       done < "$out_path"
-      printf "%s" "      $out_ratio     " >> $ratio_file
+      printf "%s" "    $test_dir --> avg ratio: $avg_ratio  min ratio: $min_ratio   " >> $ratio_file
 
     done
     echo >> $ratio_file

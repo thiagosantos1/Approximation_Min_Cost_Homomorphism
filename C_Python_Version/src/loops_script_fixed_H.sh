@@ -32,11 +32,11 @@ do
   for (( g=1; g<=$NUM_REP_LOOP; g++ ))
 	do  # create G 
 		if [ $isBipartite -eq 1 ]
-    then
-      python3 create_bip_graph.py $g_size $NUM_PART "graph_g"
-    else
-      python3 create_rand_graph.py.py $g_size $NUM_PART "graph_g"
-    fi
+	    then
+	      python3 create_bip_graph.py $g_size $NUM_PART "graph_g"
+	    else
+	      python3 create_rand_graph.py $g_size $NUM_PART "graph_g"
+	    fi
 		
 	
 		# pre-process data and run list reduction
