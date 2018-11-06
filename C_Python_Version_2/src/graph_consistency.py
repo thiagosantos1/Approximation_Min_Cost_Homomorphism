@@ -444,8 +444,8 @@ print("\t*** Making pairs is done***");
 
 #graph_g.check_homomophism(graph_h)
 
-print("\t*** Saving list homomophism and list pairs in LP octave folder ***")
+print("\t*** Saving list homomophism and list pairs ***")
 graph_g.save_list_homomophism()
 graph_g.save_list_pairs()
 
-print("\t*** List homomophism and list pairs saved in LP octave folder ***")
+print("\t*** List homomophism and list pairs saved ***")

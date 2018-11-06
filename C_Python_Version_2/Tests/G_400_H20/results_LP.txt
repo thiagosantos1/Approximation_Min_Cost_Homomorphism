@@ -1,0 +1,12 @@
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 1080955.40 | Continuos Solution
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 1081062.00 | Integral Solution
+
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 888870.90 | Continuos Solution
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 888923.00 | Integral Solution
+
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 1027133.84 | Continuos Solution
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 1034222.00 | Integral Solution
+
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 874715.00 | Continuos Solution
+Size of G: 400 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 20 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 874796.00 | Integral Solution
+

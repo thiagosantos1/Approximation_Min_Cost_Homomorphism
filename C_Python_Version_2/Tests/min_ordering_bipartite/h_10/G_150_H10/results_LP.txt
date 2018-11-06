@@ -1,0 +1,90 @@
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 475989.30 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 504208.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 395842.50 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 395864.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 465178.22 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 479070.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 484691.00 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 484806.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 427673.50 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 427710.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 352319.50 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 352494.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 401910.00 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 401910.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 495892.42 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 522305.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 501572.52 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 515302.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 423659.25 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 423738.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 472019.61 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 496642.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 459615.90 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 482883.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 464025.62 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 480923.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 388108.67 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 388158.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 426156.88 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 432497.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 446378.47 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 467714.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 397104.67 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 397121.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 362633.75 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 362735.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 474917.17 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 509747.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 322929.00 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 322929.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 385830.33 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 385852.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 401017.00 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 401082.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 437596.00 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 437596.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 454290.50 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 454371.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 494549.05 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 503135.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 375318.50 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 375409.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 404303.50 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 404308.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 491838.73 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 503606.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 489946.25 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 492667.00 | Integral Solution
+
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 461372.00 | Continuos Solution
+Size of G: 150 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 10 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 461412.00 | Integral Solution
+
