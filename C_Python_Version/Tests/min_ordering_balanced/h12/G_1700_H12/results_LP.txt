@@ -1,0 +1,17 @@
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5946836.00 | Continuos Solution
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5946836.00 | Integral Solution
+
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5719711.00 | Continuos Solution
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5719711.00 | Integral Solution
+
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5599696.00 | Continuos Solution
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5599696.00 | Integral Solution
+
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5894701.00 | Continuos Solution
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5894701.00 | Integral Solution
+
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5525481.00 | Continuos Solution
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5825481.00 | Integral Solution
+
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5358595.00 | Continuos Solution
+Size of G: 1700 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5758595.00 | Integral Solution

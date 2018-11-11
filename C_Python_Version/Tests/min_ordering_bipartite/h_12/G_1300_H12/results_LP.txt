@@ -1,0 +1,2 @@
+Size of G: 1300 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 3907397.82 | Continuos Solution
+Size of G: 1300 | G is Bipartite: Yes | Num Partitions in G: 2 | Size of H: 12 | H is Bipartite: Yes | Num Partitions in H: 2 | Pair Consistency: Used     | Total Cost: 4007397.82 | Integral Solution

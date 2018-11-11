@@ -2,21 +2,21 @@ Ratio from Graph Class: majority
 
    Ratio from Graph h15
 
-    G_100_H15 --> avg ratio: 0.999966  min ratio: 0.998726       G_150_H15 --> avg ratio: 0.999993  min ratio: 0.999682       G_200_H15 --> avg ratio: 1.0  min ratio: 1.0       G_300_H15 --> avg ratio: 0.999868  min ratio: c  
+    G_100_H15 --> avg ratio: 0.999966  min ratio: 0.998726       G_1300_H15 --> avg ratio: 0.916007  min ratio: 0.783067       G_1500_H15 --> avg ratio: 0.982143  min ratio: 0.944924       G_150_H15 --> avg ratio: 0.999993  min ratio: 0.999682       G_1700_H15 --> avg ratio: 0.97783  min ratio: 0.837977       G_2000_H15 --> avg ratio: 0.957262  min ratio: 0.839615       G_200_H15 --> avg ratio: 1.0  min ratio: 1.0       G_3000_H15 --> avg ratio: 0.965702  min ratio: 0.891063       G_300_H15 --> avg ratio: 0.999868  min ratio: 0.995851   
 
    Ratio from Graph h7
 
-    G_100_H7 --> avg ratio: 0.999995  min ratio: 0.999896       G_150_H7 --> avg ratio: 0.999418  min ratio: 0.98528       G_200_H7 --> avg ratio: 0.998706  min ratio: 0.981862       G_300_H7 --> avg ratio: 0.999667  min ratio: c  
+    G_100_H7 --> avg ratio: 0.999995  min ratio: 0.999896       G_1300_H7 --> avg ratio: 0.959287  min ratio: 0.86508       G_1500_H7 --> avg ratio: 0.96678  min ratio: 0.878423       G_150_H7 --> avg ratio: 0.999418  min ratio: 0.98528       G_1700_H7 --> avg ratio: 0.955847  min ratio: 0.882683       G_2000_H7 --> avg ratio: 0.966982  min ratio: 0.884385       G_200_H7 --> avg ratio: 0.998706  min ratio: 0.981862       G_3000_H7 --> avg ratio: 0.967934  min ratio: 0.94397       G_300_H7 --> avg ratio: 0.999667  min ratio: 0.990967   
 
    Ratio from Graph h7_big_G
 
-    G_1000_H7 --> avg ratio: 0.998999  min ratio: 0.989997      G_1200_H7 --> avg ratio: 0.999879  min ratio: 0.988798 
+    G_1000_H7 --> avg ratio: 1.0  min ratio: 1.0       G_1200_H7 --> avg ratio: 1.0  min ratio: 1.0   
 
 Ratio from Graph Class: min_ordering_balanced
 
    Ratio from Graph di_claw_h10
 
-    G_100_H10 --> avg ratio: 0.986136  min ratio: 0.916565       G_1100_H10 --> avg ratio: 0.990656  min ratio: 0.962157       G_1300_H10 --> avg ratio: 0.989876  min ratio: 0.979899       G_150_H10 --> avg ratio: 0.986932  min ratio: 0.902389       G_200_H10 --> avg ratio: c  min ratio: 0.930423       G_300_H10 --> avg ratio: 0.987645  min ratio: 0.889039   
+    G_100_H10 --> avg ratio: 0.986136  min ratio: 0.916565       G_1100_H10 --> avg ratio: 0.990656  min ratio: 0.962157       G_1300_H10 --> avg ratio: 0.967156  min ratio: 0.922342       G_1500_H10 --> avg ratio: 0.979536  min ratio: 0.953689       G_150_H10 --> avg ratio: 0.986932  min ratio: 0.902389       G_1700_H10 --> avg ratio: 0.955349  min ratio: 0.900297       G_200_H10 --> avg ratio: 0.981337  min ratio: 0.930423       G_300_H10 --> avg ratio: 0.987645  min ratio: 0.889039   
 
    Ratio from Graph h10_diclaw_Big_G
 
@@ -24,7 +24,7 @@ Ratio from Graph Class: min_ordering_balanced
 
    Ratio from Graph h12
 
-    G_100_H12 --> avg ratio: 0.99816  min ratio: 0.970438       G_150_H12 --> avg ratio: 0.996242  min ratio: 0.979203       G_200_H12 --> avg ratio: 0.99525  min ratio: 0.957485       G_300_H12 --> avg ratio: 0.999068  min ratio: cc  
+    G_100_H12 --> avg ratio: 0.99816  min ratio: 0.970438       G_1300_H12 --> avg ratio: 0.969588  min ratio: 0.911612       G_1500_H12 --> avg ratio: 0.97775  min ratio: 0.895239       G_150_H12 --> avg ratio: 0.996242  min ratio: 0.979203       G_1700_H12 --> avg ratio: 0.979853  min ratio: 0.930539       G_200_H12 --> avg ratio: 0.99525  min ratio: 0.957485       G_300_H12 --> avg ratio: 0.999068  min ratio: 0.993598   
 
    Ratio from Graph rand_Hs
 
@@ -34,27 +34,27 @@ Ratio from Graph Class: min_ordering_bipartite
 
    Ratio from Graph h_10
 
-    G_100_H10 --> avg ratio: 0.986324  min ratio: 0.937843       G_150_H10 --> avg ratio: 0.9824  min ratio: 0.931672       G_200_H10 --> avg ratio: 0.994037  min ratio: 0.944462       G_300_H10 --> avg ratio: 0.985672  min ratio: 0.943486   
+    G_100_H10 --> avg ratio: 0.986324  min ratio: 0.937843       G_1300_H10 --> avg ratio: 0.942213  min ratio: 0.942213       G_150_H10 --> avg ratio: 0.9824  min ratio: 0.931672       G_200_H10 --> avg ratio: 0.994037  min ratio: 0.944462       G_300_H10 --> avg ratio: 0.985672  min ratio: 0.943486   
 
    Ratio from Graph h_12
 
-    G_100_H12 --> avg ratio: 0.956918  min ratio: 0.845843       G_1100_H12 --> avg ratio: 0.775805  min ratio: 0.775805       G_150_H12 --> avg ratio: 0.971337  min ratio: 0.808316       G_200_H12 --> avg ratio: 0.966757  min ratio: 0.713945   
+    G_100_H12 --> avg ratio: 0.956918  min ratio: 0.845843       G_1100_H12 --> avg ratio: 0.775805  min ratio: 0.775805       G_1300_H12 --> avg ratio: 0.975046  min ratio: 0.975046       G_150_H12 --> avg ratio: 0.971337  min ratio: 0.808316       G_200_H12 --> avg ratio: 0.966757  min ratio: 0.713945   
 
    Ratio from Graph h7_1
 
-    G_100_H7 --> avg ratio: 0.999794  min ratio: 0.99762       G_150_H7 --> avg ratio: 0.999993  min ratio: 0.999856       G_200_H7 --> avg ratio: 0.999798  min ratio: 0.99664       G_300_H7 --> avg ratio: 0.999989  min ratio: 0.999724   
+    G_100_H7 --> avg ratio: 0.999794  min ratio: 0.99762       G_1300_H7 --> avg ratio: 0.974936  min ratio: 0.898161       G_1500_H7 --> avg ratio: 0.983722  min ratio: 0.948113       G_150_H7 --> avg ratio: 0.999993  min ratio: 0.999856       G_1700_H7 --> avg ratio: 0.910783  min ratio: 0.910783       G_200_H7 --> avg ratio: 0.999798  min ratio: 0.99664       G_300_H7 --> avg ratio: 0.999989  min ratio: 0.999724   
 
    Ratio from Graph h7_2
 
-    G_100_H7 --> avg ratio: 0.996023  min ratio: c       G_150_H7 --> avg ratio: 0.997321  min ratio: 0.978942       G_200_H7 --> avg ratio: 0.999095  min ratio: 0.985997       G_300_H7 --> avg ratio: 0.997473  min ratio: 0.978127   
+    G_100_H7 --> avg ratio: 0.996023  min ratio: 0.956193       G_1300_H7 --> avg ratio: 0.985802  min ratio: 0.931392       G_1500_H7 --> avg ratio: 0.990652  min ratio: 0.97402       G_150_H7 --> avg ratio: 0.997321  min ratio: 0.978942       G_1700_H7 --> avg ratio: 0.96466  min ratio: 0.96466       G_200_H7 --> avg ratio: 0.999095  min ratio: 0.985997       G_300_H7 --> avg ratio: 0.997473  min ratio: 0.978127   
 
    Ratio from Graph h7_3
 
-    G_100_H7 --> avg ratio: 0.999347  min ratio: 0.982341       G_150_H7 --> avg ratio: 0.999945  min ratio: 0.998512       G_200_H7 --> avg ratio: 0.998116  min ratio: 0.990253       G_300_H7 --> avg ratio: 0.99935  min ratio: 0.98872   
+    G_100_H7 --> avg ratio: 0.999347  min ratio: 0.982341       G_1300_H7 --> avg ratio: 0.9892  min ratio: 0.948316       G_1500_H7 --> avg ratio: 0.976557  min ratio: 0.972266       G_150_H7 --> avg ratio: 0.999945  min ratio: 0.998512       G_200_H7 --> avg ratio: 0.998116  min ratio: 0.990253       G_300_H7 --> avg ratio: 0.99935  min ratio: 0.98872   
 
    Ratio from Graph h_8
 
-    G_100_H8 --> avg ratio: 0.99745  min ratio: 0.969842       G_150_H8 --> avg ratio: 0.989797  min ratio: 0.931819       G_200_H8 --> avg ratio: 0.991056  min ratio: 0.914226       G_300_H8 --> avg ratio: 0.992  min ratio: 0.90679   
+    G_100_H8 --> avg ratio: 0.99745  min ratio: 0.969842       G_1300_H8 --> avg ratio: 0.94749  min ratio: 0.94749       G_1300_H9 --> avg ratio: 0.992537  min ratio: 0.974116       G_150_H8 --> avg ratio: 0.989797  min ratio: 0.931819       G_200_H8 --> avg ratio: 0.991056  min ratio: 0.914226       G_300_H8 --> avg ratio: 0.992  min ratio: 0.90679   
 
    Ratio from Graph h_9
 
@@ -64,9 +64,9 @@ Ratio from Graph Class: mix
 
    Ratio from Graph h_14
 
-    G_100_H14 --> avg ratio: 0.963223  min ratio: 0.87101       G_150_H14 --> avg ratio: 0.978074  min ratio: 0.882826       G_200_H14 --> avg ratio: 0.984629  min ratio: 0.927852       G_300_H14 --> avg ratio: 0.971294  min ratio: 0.881047   
+    G_100_H14 --> avg ratio: 0.963223  min ratio: 0.87101       G_1300_H14 --> avg ratio: 0.981893  min ratio: 0.927072       G_1500_H14 --> avg ratio: 0.986391  min ratio: 0.963837       G_150_H14 --> avg ratio: 0.978074  min ratio: 0.882826       G_200_H14 --> avg ratio: 0.984629  min ratio: 0.927852       G_300_H14 --> avg ratio: 0.971294  min ratio: 0.881047   
 
    Ratio from Graph h_8
 
-    G_100_H8 --> avg ratio: 0.995995  min ratio: 0.921548       G_150_H8 --> avg ratio: 0.98252  min ratio: 0.820747       G_200_H8 --> avg ratio: 0.989912  min ratio: 0.850658       G_300_H8 --> avg ratio: 0.98552  min ratio: 0.820499   
+    G_100_H8 --> avg ratio: 0.995995  min ratio: 0.921548       G_1300_H8 --> avg ratio: 0.98752  min ratio: 0.951324       G_1500_H8 --> avg ratio: 0.994971  min ratio: 0.963427       G_150_H8 --> avg ratio: 0.98252  min ratio: 0.820747       G_1700_H8 --> avg ratio: 0.995041  min ratio: 0.968233       G_2000_H8 --> avg ratio: 0.996976  min ratio: 0.983957       G_200_H8 --> avg ratio: 0.989912  min ratio: 0.850658       G_3000_H8 --> avg ratio: 0.966682  min ratio: 0.825441       G_300_H8 --> avg ratio: 0.98552  min ratio: 0.820499   
 
