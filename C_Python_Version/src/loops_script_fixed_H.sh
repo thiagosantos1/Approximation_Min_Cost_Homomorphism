@@ -21,7 +21,7 @@ NUM_REP_LOOP="$4"
 # make sure to recompile if needed
 make
 
-graphs_g=(1100 1300 1400 1500 1600)
+graphs_g=(100 150 200 300 1000 1100 1200 1300 1500 1700 2000 3000)
 
 
 # for each desired size of G
