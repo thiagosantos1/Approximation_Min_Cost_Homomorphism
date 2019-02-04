@@ -1,5 +1,0 @@
-Size of G: 3000 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 7 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 10115925.00 | Continuos Solution
-Size of G: 3000 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 7 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 10185925.00 | Integral Solution
-
-Size of G: 3000 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 7 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 10108542.00 | Continuos Solution
-Size of G: 3000 | G is Bipartite: Yes | Num Partitions in G: 3 | Size of H: 7 | H is Bipartite: Yes | Num Partitions in H: 3 | Pair Consistency: Used     | Total Cost: 10708542.00 | Integral Solution
