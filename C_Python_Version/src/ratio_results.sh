@@ -8,7 +8,7 @@ DIRS=`ls -l $tests | egrep '^d' | awk '{print $9}'`
 
 ratio_file="$tests/ratios.txt"
 
-if [ -e $ratio_file ]; then
+if [ -e $ratio_file ]; then 
   rm $ratio_file
 else
   touch $ratio_file

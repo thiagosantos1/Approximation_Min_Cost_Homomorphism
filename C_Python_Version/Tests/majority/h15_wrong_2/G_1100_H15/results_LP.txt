@@ -1,4 +1,4 @@
-Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4763032.00 | Continuos Solution
+Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4663032.00 | Continuos Solution
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4763032.00 | Integral Solution
 
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4303565.00 | Continuos Solution
@@ -10,7 +10,7 @@ Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 |
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 3979602.00 | Continuos Solution
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 3979602.00 | Integral Solution
 
-Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5401478.00 | Continuos Solution
+Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5201478.80 | Continuos Solution
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5401478.00 | Integral Solution
 
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 3888278.00 | Continuos Solution
@@ -31,7 +31,7 @@ Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 |
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5240876.00 | Continuos Solution
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5240876.00 | Integral Solution
 
-Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4449459.00 | Continuos Solution
+Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4349459.50 | Continuos Solution
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4449459.00 | Integral Solution
 
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4144052.00 | Continuos Solution
@@ -55,7 +55,7 @@ Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 |
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4037768.00 | Continuos Solution
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4037768.00 | Integral Solution
 
-Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4063898.00 | Continuos Solution
+Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4043898.00 | Continuos Solution
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 4063898.00 | Integral Solution
 
 Size of G: 1100 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 15 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 5366255.00 | Continuos Solution

@@ -1,7 +1,7 @@
  #!/usr/bin/env python3
 # chmod u+x
  
-import sys
+import sys 
 import re
 from decimal import *
 
@@ -12,7 +12,6 @@ def main():
 
   file_path = sys.argv[1]
   getcontext().prec = 6
-
   try:
     with open(file_path,"r") as file:
       total_Integral = 0
@@ -49,7 +48,9 @@ def main():
 
     with open(file_out,"w") as file:
       file.write(str(float( Decimal(total_Continuos) / Decimal(total_Integral) ) ) +"\n")
-      file.write(str(max_ratio))
+      file.write(str(max_ratio)+"\n")
+      file.write(str(total_Integral)+"\n")
+      file.write(str(total_Continuos))
       file.close()
 
   except Exception as e:

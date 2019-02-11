@@ -1,5 +1,5 @@
 Size of G: 100 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 14 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 422969.96 | Continuos Solution
-Size of G: 100 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 14 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 438630.00 | Integral Solution
+Size of G: 100 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 14 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 438630.00 | Integral Solution 
 
 Size of G: 100 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 14 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 387141.00 | Continuos Solution
 Size of G: 100 | G is Bipartite: Yes | Num Partitions in G: 5 | Size of H: 14 | H is Bipartite: Yes | Num Partitions in H: 5 | Pair Consistency: Used     | Total Cost: 387141.00 | Integral Solution
