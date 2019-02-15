@@ -2,8 +2,8 @@
    Copyright (C)
 */
 
-#include <graph.h> 
-#include <makegraph.h>
+#include <graph.h>  
+#include <makegraph.h> 
 
 void makegraph(GRAPH *op, USER_PARAMS * ip)
 {

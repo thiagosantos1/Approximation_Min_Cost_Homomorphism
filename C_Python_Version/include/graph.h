@@ -84,7 +84,7 @@ typedef struct LPdata {
 	int allocation_size; // size to realocate memory
 	int memory_left; // keep track if we still have space in ia,ja & ar
 	int variable_type;
-	int num_nonzero_constraints;
+	int num_nonzero_constraints; 
 
 	glp_prob *mip;
 

@@ -30,4 +30,4 @@ void init_graph_h(GRAPH *op, char * file_name);
 void init_cost_g_h(GRAPH *op, char * file_name);
 
 /* print a given matrix */
-void print_matrix(uchar ** matrix, int rowns, int columns);
+void print_matrix(uchar ** matrix, int rowns, int columns); 
