@@ -6,6 +6,26 @@ This digraphs introduced recently by Dr.Rafiey. They admit a number of equivalen
 of  min-orderings),  then  the  list  homomorphism  problem  to H is  known  to  admit  a polynomial time algorithm.The bi-arc digraphs contain the class of monotone proper- interval bigraphs the digraphs that admit a min-max ordering.If a digraph H admits a min-max (and extended min-max) ordering then minimum cost homomorphism to H, MinHOM(H), is polynomial time solvable and NP-complete otherwise.</br>
 We show another importance of this class of digraphs by designing a constant ap- proximation algorithm for minimum cost homomorphism.  When H is a target digraphs and admits a min-ordering then MinHOM(H), can be approximated within a constant factor.
 
+## Results
+</br></br> Examples of output :
+  <table border=1>
+     <tr align='center'>
+        <td>Original Image</td>                    
+        <td>Convolved Image</td>                    
+        <td>Label</td>                    
+     </tr>
+     <tr align='center' > 
+        <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="350"                  title="hover text"></td>         
+       <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="350" title="hover        text"></td>
+       <td>Not Using Glasses</td> 
+     </tr>
+    <tr align='center' > 
+        <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="350"                title="hover text"></td>         
+       <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="350" title="hover        text"></td>
+       <td>Using Glasses</td> 
+     </tr>
+  </table>
+
 ## How to setup and run the code 
 
 1) Wanna change paramters of LP manualy, such as, optimal or continuos solution?
