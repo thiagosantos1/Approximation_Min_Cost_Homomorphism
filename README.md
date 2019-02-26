@@ -41,6 +41,7 @@ Continuous x Integral Solution :
 We have submitted our paper to several conferences and it will be published soon.
 
 </br>
+
 ## How to setup and run the code 
 
 1) Wanna change paramters of LP manualy, such as, optimal or continuos solution?
