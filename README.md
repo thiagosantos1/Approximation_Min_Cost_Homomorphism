@@ -7,7 +7,7 @@ of  min-orderings),  then  the  list  homomorphism  problem  to H is  known  to 
 We show another importance of this class of digraphs by designing a constant ap- proximation algorithm for minimum cost homomorphism.  When H is a target digraphs and admits a min-ordering then MinHOM(H), can be approximated within a constant factor.
 
 ## Results
-</br></br> Continuous x Integral Solution :
+</br> Continuous x Integral Solution :
   <table border=1>
      <tr align='center' > 
         <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="500"                  title="hover text"></td>         
@@ -38,6 +38,7 @@ We show another importance of this class of digraphs by designing a constant ap-
 
 We have submitted our paper to several conferences and it will be published soon.
 
+</br>
 ## How to setup and run the code 
 
 1) Wanna change paramters of LP manualy, such as, optimal or continuos solution?
