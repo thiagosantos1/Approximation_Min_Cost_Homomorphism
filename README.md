@@ -30,6 +30,7 @@ Continuous x Integral Solution :
   </table>
 
 </br>
+
 ## Publication
 * Our project is available on arxiv on the following links:
 
