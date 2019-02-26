@@ -11,8 +11,7 @@ We show another importance of this class of digraphs by designing a constant ap-
   <table border=1>
      <tr align='center'>
         <td>Original Image</td>                    
-        <td>Convolved Image</td>                    
-        <td>Label</td>                    
+        <td>Convolved Image</td>                                     
      </tr>
      <tr align='center' > 
         <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="350"                  title="hover text"></td>         
