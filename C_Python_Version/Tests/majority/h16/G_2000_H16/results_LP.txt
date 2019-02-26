@@ -1,0 +1,6 @@
+Size of G: 2000 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 16 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 9880077.00 | Continuos Solution
+Size of G: 2000 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 16 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 9880077.00 | Integral Solution
+
+Size of G: 2000 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 16 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 9124790.00 | Continuos Solution
+Size of G: 2000 | G is Bipartite: Yes | Num Partitions in G: 4 | Size of H: 16 | H is Bipartite: Yes | Num Partitions in H: 4 | Pair Consistency: Used     | Total Cost: 9124790.00 | Integral Solution
+
