@@ -32,9 +32,9 @@ We show another importance of this class of digraphs by designing a constant ap-
 ## Publication
 * Our project is available on arxiv on the following links:
 
-	** https://arxiv.org/abs/1902.02201
+	* https://arxiv.org/abs/1902.02201
 
-	** https://arxiv.org/pdf/1902.02201.pdf
+	* https://arxiv.org/pdf/1902.02201.pdf
 
 We have submitted our paper to several conferences and it will be published soon.
 
