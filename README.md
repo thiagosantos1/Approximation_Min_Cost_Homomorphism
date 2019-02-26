@@ -10,7 +10,7 @@ We show another importance of this class of digraphs by designing a constant ap-
 </br></br> Examples of output :
   <table border=1>
      <tr align='center' > 
-        <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="350"                  title="hover text"></td>         
+        <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="450"                  title="hover text"></td>         
        <td><img src="https://github.com/thiagosantos1/Approximation_Min_Cost_Homomorphism/blob/master/C_Python_Version/Tests/plots/results_1.png" width="350" title="hover        text"></td>
      </tr>
     <tr align='center' > 
