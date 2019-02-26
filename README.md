@@ -29,6 +29,15 @@ We show another importance of this class of digraphs by designing a constant ap-
      </tr>
   </table>
 
+## Publication
+* Our project is available on arxiv on the following links:
+
+* https://arxiv.org/abs/1902.02201
+
+* https://arxiv.org/pdf/1902.02201.pdf
+
+We have submitted our paper to several conferences and it will be published soon.
+
 ## How to setup and run the code 
 
 1) Wanna change paramters of LP manualy, such as, optimal or continuos solution?
@@ -85,6 +94,8 @@ We show another importance of this class of digraphs by designing a constant ap-
 ## Contributors
 
 Dr. Arash Rafiey
+
+Phd. Akbar Rafiey
 
 M.Sc. Thiago Santos
 
