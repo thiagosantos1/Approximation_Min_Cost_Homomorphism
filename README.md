@@ -32,13 +32,16 @@ Continuous x Integral Solution :
 </br>
 
 ## Publication
+
+* Our paper has been published on ICALP 2019 and be found the following page:
+	* https://pdfs.semanticscholar.org/aa81/9b22413045b197d986477972c3fb2b9d4b9a.pdf?_ga=2.82924052.361578357.1567611794-1314844753.1567611793
+	
 * Our project is available on arxiv on the following links:
 
 	* https://arxiv.org/abs/1902.02201
 
 	* https://arxiv.org/pdf/1902.02201.pdf
 
-We have submitted our paper to several conferences and it will be published soon.
 
 </br>
 
